@@ -52,7 +52,7 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("/front/images/image.jpeg");
+  background-image: url("/front/images/main.png");
   background-position: top;
   background-size: cover;
 }
