@@ -1,8 +1,9 @@
 
 body {
-    /* font-family: "Poppins", sans-serif; */
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     background-color: #f4f7f9;
+    font-weight: 300;
 }
 a{
     text-decoration: none;
@@ -69,4 +70,7 @@ a{
 }
 .flightDetail{
     border-top-style: dotted !important;
+}
+.separator{
+    border-style: dotted;
 }
