@@ -17,11 +17,9 @@
     <link rel="stylesheet" href="front/css/bootstrap.min.css">
     <link rel="stylesheet" href="front/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="front/owlcarousel/assets/owl.theme.default.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="front/js/bootstrap.bundle.min.js"></script>
-    <script src="front/js/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="front/js/custom.js"></script>
-    <script src="front/js/repeat.js"></script>
     <script src="https://kit.fontawesome.com/a59ab3dbeb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="front/css/style.css">
 </head>
@@ -73,7 +71,8 @@
                         <div class="flightCard oneway mb-3">
                             <div class="row mx-0">
                                 <div class="col-8 px-0">
-                                    <div class="p-2 bg-white shadow-sm rounded-3 h-100">
+                                    <div
+                                        class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="timeDepart fw-bold">
@@ -87,12 +86,14 @@
                                                         class="d-flex justify-content-center align-items-center me-2 px-2 duration">
                                                         <time datetime="">3h 30m</time>
                                                     </div>
-                                                    <div
+                                                    <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Pakistan International Airline"
                                                         class="operatorLogo d-flex justify-content-between align-items-center">
                                                         <div
                                                             class="border rounded-1 d-flex align-items-center justify-content-center">
                                                             <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
-                                                                class="img-fluid" alt="PIA Logo"></div>
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-grow-1 mx-2">
@@ -119,7 +120,34 @@
                                             </div>
                                         </div>
                                         <div class="border-top mt-3 p-2 flightDetail">
-                                            Flight Detail
+                                            <button class="btn p-0" data-bs-toggle="modal"
+                                                data-bs-target="#flightResult1" data-bs-target="#staticBackdrop">
+                                                Flight Details
+                                            </button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="flightResult1" tabindex="-1"
+                                            aria-labelledby="flightResult1Label" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="flightResult1Label">Trip details</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <span class="fw-bold">
+                                                            $300
+                                                        </span>
+                                                        <button type="button" class="btn btn-primary">
+                                                            Call Now
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +180,8 @@
                         <div class="flightCard oneway mb-3">
                             <div class="row mx-0">
                                 <div class="col-8 px-0">
-                                    <div class="p-2 bg-white shadow-sm rounded-3 h-100">
+                                    <div
+                                        class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="timeDepart fw-bold">
@@ -168,11 +197,14 @@
                                                     </div>
                                                     <div
                                                         class="operatorLogo d-flex justify-content-between align-items-center">
-                                                        <div
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Pakistan International Airline"
                                                             class="border rounded-1 d-flex align-items-center justify-content-center">
                                                             <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
-                                                                class="img-fluid" alt="PIA Logo"></div>
-                                                        <div class="border rounded-1 d-flex align-items-center justify-content-center
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Emirates Airline" class="border rounded-1 d-flex align-items-center justify-content-center
                                                    d-flex align-items-center justify-content-center"> <img
                                                                 src="https://images.kiwi.com/airlines/32x32/EK.png?default=airline.png"
                                                                 class="img-fluid" alt="PIA Logo"></div>
@@ -202,7 +234,9 @@
                                             </div>
                                         </div>
                                         <div class="border-top mt-3 p-2 flightDetail">
-                                            Flight Detail
+                                            <button class="btn p-0">
+                                                Flight Details
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -235,7 +269,8 @@
                         <div class="flightCard oneway mb-3">
                             <div class="row mx-0">
                                 <div class="col-8 px-0">
-                                    <div class="p-2 bg-white shadow-sm rounded-3 h-100">
+                                    <div
+                                        class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="timeDepart fw-bold">
@@ -251,18 +286,23 @@
                                                     </div>
                                                     <div
                                                         class="operatorLogo d-flex justify-content-between align-items-center">
-                                                        <div
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Pakistan International Airline"
                                                             class="border rounded-1 d-flex align-items-center justify-content-center">
                                                             <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
-                                                                class="img-fluid" alt="PIA Logo" title="PIA"></div>
-                                                        <div class="border rounded-1 d-flex align-items-center justify-content-center
+                                                                class="img-fluid" alt="PIA Logo" title="PIA">
+                                                        </div>
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Emirates Airline" class="border rounded-1 d-flex align-items-center justify-content-center
                                                    d-flex align-items-center justify-content-center"> <img
                                                                 src="https://images.kiwi.com/airlines/32x32/EK.png?default=airline.png"
                                                                 class="img-fluid" alt="PIA Logo" title="Emirates"></div>
-                                                        <div class="border rounded-1 d-flex align-items-center justify-content-center
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Oman Air" class="border rounded-1 d-flex align-items-center justify-content-center
                                                        d-flex align-items-center justify-content-center" title="PIA">
                                                             <img src="https://images.kiwi.com/airlines/32x32/WY.png?default=airline.png"
-                                                                class="img-fluid" alt="PIA Logo"></div>
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-grow-1 mx-2">
@@ -289,7 +329,9 @@
                                             </div>
                                         </div>
                                         <div class="border-top mt-3 p-2 flightDetail">
-                                            Flight Detail
+                                            <button class="btn p-0">
+                                                Flight Details
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -322,7 +364,8 @@
                         <div class="flightCard return mb-3">
                             <div class="row mx-0">
                                 <div class="col-8 px-0">
-                                    <div class="p-2 bg-white shadow-sm rounded-3 h-100">
+                                    <div
+                                        class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
                                         <div>
                                             <p class="text-secondary mb-0 small">
                                                 Inbound
@@ -341,10 +384,12 @@
                                                     </div>
                                                     <div
                                                         class="operatorLogo d-flex justify-content-between align-items-center">
-                                                        <div
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Pakistan International Airline"
                                                             class="border rounded-1 d-flex align-items-center justify-content-center">
                                                             <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
-                                                                class="img-fluid" alt="PIA Logo"></div>
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-grow-1 mx-2">
@@ -389,10 +434,12 @@
                                                     </div>
                                                     <div
                                                         class="operatorLogo d-flex justify-content-between align-items-center">
-                                                        <div
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Pakistan International Airline"
                                                             class="border rounded-1 d-flex align-items-center justify-content-center">
                                                             <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
-                                                                class="img-fluid" alt="PIA Logo"></div>
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-grow-1 mx-2">
@@ -419,7 +466,9 @@
                                             </div>
                                         </div>
                                         <div class="border-top mt-3 p-2 flightDetail">
-                                            Flight Detail
+                                            <button class="btn p-0">
+                                                Flight Details
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

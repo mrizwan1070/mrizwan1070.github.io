@@ -71,6 +71,9 @@ a{
 .flightDetail{
     border-top-style: dotted !important;
 }
+.flightDetail button{
+    font-weight: 300;
+}
 .separator{
     border-style: dotted;
 }
