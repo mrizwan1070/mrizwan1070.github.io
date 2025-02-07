@@ -45,8 +45,20 @@ a{
     outline-color: #0072c8;
     width: 100%;
     border-radius: .3rem;
+    transition: all 0.5s linear;
 }
 .bookBtn.whatsAppBtn{
+    color: #0072c8;
+    background-color: #fff;
+    border-color: #0072c8;
+    outline-color: #0072c8;
+}
+.bookBtn:hover{
+    background-color: #025799;
+    border-color: #025799;
+    outline-color: #025799;
+}
+.bookBtn.whatsAppBtn:hover{
     color: #0072c8;
     background-color: #fff;
     border-color: #0072c8;
@@ -68,7 +80,7 @@ a{
 .stop p{
     border-bottom-style: dotted !important;
 }
-.flightDetail{
+.flightDetailBtn{
     border-top-style: dotted !important;
 }
 .flightDetail button{
@@ -76,4 +88,53 @@ a{
 }
 .separator{
     border-style: dotted;
+}
+.modal-logo{
+    width: 24px;
+    height: 24px;
+}
+.aLine{
+    background-color: #f4f7f9;
+    border-radius: 12px;
+}
+.dot{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot-icon {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #6c757d;
+    border-radius: 50%;
+    position: relative;
+    overflow: visible;
+}
+.dot-icon::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 40px;
+    background: #6c757d;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dot-up::after{
+    bottom: 0;
+}
+.dot-icon .fa-circle{
+    font-size: .5rem;
+    display: none;
+}
+.w-90px{
+    width: 90px;
+}
+.plane-icon i{
+    rotate: 90deg;
+}
+.my-shadow {
+    box-shadow: 0 3px 1px -2px #00000033, 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f !important;
 }
