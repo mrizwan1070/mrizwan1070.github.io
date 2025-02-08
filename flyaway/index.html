@@ -121,14 +121,14 @@
                                         </div>
                                         <div class="border-top mt-3 p-2 flightDetailBtn">
                                             <button class="btn p-0" data-bs-toggle="modal"
-                                                data-bs-target="#flightResult1" data-bs-target="#staticBackdrop">
+                                                data-bs-target="#flightResult1" data-bs-target="#flightResult1">
                                                 Flight Details
                                             </button>
                                         </div>
                                         <!-- Modal -->
                                         <div class="modal fade modal-lg" id="flightResult1" tabindex="-1"
                                             aria-labelledby="flightResult1Label" aria-hidden="true"
-                                            data-bs-backdrop="static" data-bs-keyboard="false">
+                                            data-bs-keyboard="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header border-0">
@@ -138,8 +138,12 @@
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <div class="d-flex justify-content-between align-items-end mb-2">
-                                                            <div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-end mb-2">
+                                                            <div class="d-flex flex-column align-items-start">
+                                                                <p class="mb-0 text-secondary small">
+                                                                    Flight No. <span>PK 305</span>
+                                                                </p>
                                                                 <p class="mb-0 fw-bold">
                                                                     Lahore <span>&nbsp; <i
                                                                             class="fa-solid fa-arrow-right-long"></i>
@@ -160,22 +164,24 @@
                                                         <div class="flightDetail">
                                                             <div class="p-2 rounded-3 my-shadow">
                                                                 <div class="d-flex">
-                                                                    <div class="d-flex flex-column align-items-end w-90px">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
                                                                         <span class="fw-bold">
                                                                             <time datetime="">12:35</time>
                                                                         </span>
-                                                                        <span class="text-secondary">
+                                                                        <span class="text-secondary small">
                                                                             Fri, 14 Feb
                                                                         </span>
                                                                     </div>
                                                                     <div class="dot mx-3">
-                                                                        <span class="dot-icon"><i class="fa-solid fa-circle"></i></span>
+                                                                        <span class="dot-icon"><i
+                                                                                class="fa-solid fa-circle"></i></span>
                                                                     </div>
                                                                     <div class="d-flex flex-column">
                                                                         <span class="fw-bold">
                                                                             Lahore . LHE
                                                                         </span>
-                                                                        <span class="text-secondary">
+                                                                        <span class="text-secondary small">
                                                                             Lahore International Airport
                                                                         </span>
                                                                     </div>
@@ -187,9 +193,11 @@
                                                                     <div class="dot mx-3 plane-icon">
                                                                         <i class="fa-solid fa-plane"></i>
                                                                     </div>
-                                                                    <div class="d-flex align-items-center gap-1 aLine px-1">
+                                                                    <div
+                                                                        class="d-flex align-items-center gap-1 aLine pe-1 small">
                                                                         <div class="modal-logo">
-                                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png" alt="" class="img-fluid">
+                                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                                alt="" class="img-fluid">
                                                                         </div>
                                                                         <div>
                                                                             <p class="mb-0">
@@ -199,22 +207,24 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="d-flex">
-                                                                    <div class="d-flex flex-column align-items-end w-90px">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
                                                                         <span class="fw-bold">
                                                                             <time datetime="">15:35</time>
                                                                         </span>
-                                                                        <span class="text-secondary">
+                                                                        <span class="text-secondary small">
                                                                             Fri, 15 Feb
                                                                         </span>
                                                                     </div>
                                                                     <div class="dot mx-3">
-                                                                        <span class="dot-icon dot-up"><i class="fa-solid fa-circle"></i></span>
+                                                                        <span class="dot-icon dot-up"><i
+                                                                                class="fa-solid fa-circle"></i></span>
                                                                     </div>
                                                                     <div class="d-flex flex-column">
                                                                         <span class="fw-bold">
                                                                             Dubai . DXB
                                                                         </span>
-                                                                        <span class="text-secondary">
+                                                                        <span class="text-secondary small">
                                                                             Dubai International Airport
                                                                         </span>
                                                                     </div>
@@ -318,9 +328,210 @@
                                             </div>
                                         </div>
                                         <div class="border-top mt-3 p-2 flightDetailBtn">
-                                            <button class="btn p-0">
+                                            <button class="btn p-0" data-bs-toggle="modal"
+                                                data-bs-target="#flightResult2">
                                                 Flight Details
                                             </button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade modal-lg" id="flightResult2" tabindex="-1"
+                                            aria-labelledby="flightResult2Label" aria-hidden="true"
+                                            data-bs-keyboard="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header border-0">
+                                                        <h5 class="modal-title" id="flightResult2Label">Trip details
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-end mb-2">
+                                                            <div class="d-flex flex-column align-items-start">
+                                                                <p class="mb-0 text-secondary small">
+                                                                    Flight No. <span>PK 305</span>
+                                                                </p>
+                                                                <p class="mb-0 fw-bold">
+                                                                    Lahore <span>&nbsp; <i
+                                                                            class="fa-solid fa-arrow-right-long"></i>
+                                                                        &nbsp;</span> Dubai
+                                                                </p>
+                                                            </div>
+                                                            <div class="d-flex flex-column align-items-end">
+                                                                <span class="text-secondary small">
+                                                                    Duration
+                                                                </span>
+                                                                <span class="">
+                                                                    <span><i
+                                                                            class="fa-regular fa-clock"></i></span><span
+                                                                        class="fw-bold"> 3h 30m</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flightDetail">
+                                                            <div class="p-2 rounded-3 my-shadow">
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">12:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 14 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Lahore . LHE
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Lahore International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center py-3">
+                                                                    <div class="w-90px text-end">
+                                                                        <time datetime="">3h 30m</time>
+                                                                    </div>
+                                                                    <div class="dot mx-3 plane-icon">
+                                                                        <i class="fa-solid fa-plane"></i>
+                                                                    </div>
+                                                                    <div
+                                                                        class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                        <div class="modal-logo">
+                                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="mb-0">
+                                                                                Pakistan International Airlines
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">15:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 15 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon dot-up"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Karachi . KCI
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Jinnah International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="layoverDetail small px-3 my-3">
+                                                            <div class="">
+                                                                <p class="mb-0 text-secondary">
+                                                                    <span>
+                                                                        <span><i
+                                                                                class="fa-regular fa-clock"></i></span><span
+                                                                            class=""> 3h 30m layover</span>
+                                                                    </span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flightDetail">
+                                                            <div class="p-2 rounded-3 my-shadow">
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">12:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 14 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Karachi . KCI
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Jinnah International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center py-3">
+                                                                    <div class="w-90px text-end">
+                                                                        <time datetime="">2h 30m</time>
+                                                                    </div>
+                                                                    <div class="dot mx-3 plane-icon">
+                                                                        <i class="fa-solid fa-plane"></i>
+                                                                    </div>
+                                                                    <div
+                                                                        class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                        <div class="modal-logo">
+                                                                            <img src="https://images.kiwi.com/airlines/32x32/EK.png?default=airline.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="mb-0">
+                                                                                Emirates Airlines
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">15:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 15 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon dot-up"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Dubai . DXB
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Dubai International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer border-0">
+                                                        <span class="fw-bold">
+                                                            $300
+                                                        </span>
+                                                        <button type="button" class="bookBtn w-auto">
+                                                            Call Now
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -452,7 +663,7 @@
                                         class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
                                         <div>
                                             <p class="text-secondary mb-0 small">
-                                                Inbound
+                                                Outbound
                                             </p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="timeDepart fw-bold">
@@ -502,7 +713,7 @@
                                         <hr class="separator">
                                         <div>
                                             <p class="text-secondary mb-0 small">
-                                                Outbound
+                                                Inbound
                                             </p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="timeDepart fw-bold">
@@ -550,9 +761,231 @@
                                             </div>
                                         </div>
                                         <div class="border-top mt-3 p-2 flightDetailBtn">
-                                            <button class="btn p-0">
+                                            <button class="btn p-0" data-bs-toggle="modal"
+                                                data-bs-target="#flightResult3">
                                                 Flight Details
                                             </button>
+                                        </div>
+                                        <div class="modal fade modal-lg" id="flightResult3" tabindex="-1"
+                                            aria-labelledby="flightResult3Label" aria-hidden="true"
+                                            data-bs-keyboard="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header border-0">
+                                                        <h5 class="modal-title" id="flightResult3Label">Trip details
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="returnFlight">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-end mb-2">
+                                                                <div class="d-flex flex-column align-items-start">
+                                                                    <p class="mb-0 text-secondary small">
+                                                                        Flight No. <span>PK 305</span>
+                                                                    </p>
+                                                                    <p class="mb-0 fw-bold">
+                                                                        Lahore <span>&nbsp; <i
+                                                                                class="fa-solid fa-arrow-right-long"></i>
+                                                                            &nbsp;</span> Dubai
+                                                                    </p>
+                                                                </div>
+                                                                <div class="d-flex flex-column align-items-end">
+                                                                    <span class="text-secondary small">
+                                                                        Duration
+                                                                    </span>
+                                                                    <span class="">
+                                                                        <span><i
+                                                                                class="fa-regular fa-clock"></i></span><span
+                                                                            class="fw-bold"> 3h 30m</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flightDetail">
+                                                                <div class="p-2 rounded-3 my-shadow">
+                                                                    <div class="d-flex">
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-end w-90px">
+                                                                            <span class="fw-bold">
+                                                                                <time datetime="">12:35</time>
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Fri, 14 Feb
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="dot mx-3">
+                                                                            <span class="dot-icon"><i
+                                                                                    class="fa-solid fa-circle"></i></span>
+                                                                        </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="fw-bold">
+                                                                                Lahore . LHE
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Lahore International Airport
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center py-3">
+                                                                        <div class="w-90px text-end">
+                                                                            <time datetime="">3h 30m</time>
+                                                                        </div>
+                                                                        <div class="dot mx-3 plane-icon">
+                                                                            <i class="fa-solid fa-plane"></i>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                            <div class="modal-logo">
+                                                                                <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                                    alt="" class="img-fluid">
+                                                                            </div>
+                                                                            <div>
+                                                                                <p class="mb-0">
+                                                                                    Pakistan International Airlines
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex">
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-end w-90px">
+                                                                            <span class="fw-bold">
+                                                                                <time datetime="">15:35</time>
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Fri, 15 Feb
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="dot mx-3">
+                                                                            <span class="dot-icon dot-up"><i
+                                                                                    class="fa-solid fa-circle"></i></span>
+                                                                        </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="fw-bold">
+                                                                                Dubai . DXB
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Dubai International Airport
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="my-3 d-flex justify-content-center align-items-center position-relative">
+                                                            <p class="mb-0 px-2 bg-white small" style="z-index: 1;">
+                                                                12 Nights in Dubai
+                                                            </p>
+                                                            <hr class="position-absolute border-secondary" style="z-index: 0;top: 50%;transform: translateY(-50%);margin: 0;">
+                                                        </div>
+                                                        <div class="returnFlight">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-end mb-2">
+                                                                <div class="d-flex flex-column align-items-start">
+                                                                    <p class="mb-0 text-secondary small">
+                                                                        Flight No. <span>PK 305</span>
+                                                                    </p>
+                                                                    <p class="mb-0 fw-bold">
+                                                                        Dubai <span>&nbsp; <i
+                                                                                class="fa-solid fa-arrow-right-long"></i>
+                                                                            &nbsp;</span> Lahore
+                                                                    </p>
+                                                                </div>
+                                                                <div class="d-flex flex-column align-items-end">
+                                                                    <span class="text-secondary small">
+                                                                        Duration
+                                                                    </span>
+                                                                    <span class="">
+                                                                        <span><i
+                                                                                class="fa-regular fa-clock"></i></span><span
+                                                                            class="fw-bold"> 3h 30m</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flightDetail">
+                                                                <div class="p-2 rounded-3 my-shadow">
+                                                                    <div class="d-flex">
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-end w-90px">
+                                                                            <span class="fw-bold">
+                                                                                <time datetime="">12:35</time>
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Fri, 14 Feb
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="dot mx-3">
+                                                                            <span class="dot-icon"><i
+                                                                                    class="fa-solid fa-circle"></i></span>
+                                                                        </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="fw-bold">
+                                                                                Dubai . DBX
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Dubai International Airport
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center py-3">
+                                                                        <div class="w-90px text-end">
+                                                                            <time datetime="">3h 30m</time>
+                                                                        </div>
+                                                                        <div class="dot mx-3 plane-icon">
+                                                                            <i class="fa-solid fa-plane"></i>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                            <div class="modal-logo">
+                                                                                <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                                    alt="" class="img-fluid">
+                                                                            </div>
+                                                                            <div>
+                                                                                <p class="mb-0">
+                                                                                    Pakistan International Airlines
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex">
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-end w-90px">
+                                                                            <span class="fw-bold">
+                                                                                <time datetime="">15:35</time>
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Fri, 15 Feb
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="dot mx-3">
+                                                                            <span class="dot-icon dot-up"><i
+                                                                                    class="fa-solid fa-circle"></i></span>
+                                                                        </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="fw-bold">
+                                                                                Lahore . LHE
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Lahore International Airport
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer border-0">
+                                                        <span class="fw-bold">
+                                                            $300
+                                                        </span>
+                                                        <button type="button" class="bookBtn w-auto">
+                                                            Call Now
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
