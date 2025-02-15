@@ -144,3 +144,74 @@ a{
 .layoverDetail{
     margin-left: 90px;
 }
+.sideFilter:not(:last-child){
+    border-bottom: 1px solid rgb(223, 223, 223);
+    margin-bottom: 1rem;
+}
+.filterLabel {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .filterLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 50%;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .filterLabel input:checked ~ .checkmark {
+    border: 2px solid #0072c8;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .filterLabel input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .filterLabel .checkmark:after {
+       top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #0072c8;
+  }
+  input[type="checkbox"] ~ .checkmark{
+    border-radius: 2px;
+  }
+  .filterLabel input[type="checkbox"] ~ .checkmark:after{
+    width: 8px;
+    height: 8px;
+    border-radius: 2px !important;
+  }

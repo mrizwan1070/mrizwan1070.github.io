@@ -28,7 +28,74 @@
     <div class="container-lg">
         <div class="row">
             <div class="col-md-3">
-                sidebar
+                <div class="sidebar">
+                    <div class="sideFilter">
+                        <div class="filterHead d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#StopFilter" role="button" aria-expanded="false" aria-controls="StopFilter">
+                            <h5>
+                                Stops
+                            </h5>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="collapse show" id="StopFilter" >
+                            <div>
+                                <label class="filterLabel">Any
+                                    <input type="radio" checked="checked" name="stop">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">Direct
+                                    <input type="radio" name="stop">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">1 Stop
+                                    <input type="radio" name="stop">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">2 Stop
+                                    <input type="radio" name="stop">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sideFilter">
+                        <div class="filterHead d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#Carrier" role="button" aria-expanded="false" aria-controls="Carrier">
+                            <h5>
+                                Carriers
+                            </h5>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="collapse show" id="Carrier" >
+                            <div>
+                                <label class="filterLabel">Pakistan International Airline
+                                    <input type="checkbox" checked name="carrier">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">Emirates Airways
+                                    <input type="checkbox" checked name="carrier">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">Saudi Airlines
+                                    <input type="checkbox" checked name="carrier">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">Qatar Airways
+                                    <input type="checkbox" checked name="carrier">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBanner">
+                        <div class="text-center">
+                            <img src="front/images/img1.webp" alt="" class="img-fluid mb-3">
+                            <img src="front/images/img2.webp" alt="" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-9">
                 <div class="flightResult">
@@ -878,7 +945,8 @@
                                                             <p class="mb-0 px-2 bg-white small" style="z-index: 1;">
                                                                 12 Nights in Dubai
                                                             </p>
-                                                            <hr class="position-absolute border-secondary" style="z-index: 0;top: 50%;transform: translateY(-50%);margin: 0;">
+                                                            <hr class="position-absolute border-secondary"
+                                                                style="z-index: 0;top: 50%;transform: translateY(-50%);margin: 0;">
                                                         </div>
                                                         <div class="returnFlight">
                                                             <div
