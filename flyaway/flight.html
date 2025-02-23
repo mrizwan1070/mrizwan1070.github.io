@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FlayAwayWorld</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="front/images/favicon.png" type="image/x-icon">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="front/css/bootstrap.min.css">
+    <link rel="stylesheet" href="front/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="front/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="front/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="front/js/custom.js"></script>
+    <script src="https://kit.fontawesome.com/a59ab3dbeb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="front/css/style.css">
+</head>
+<header>
+    <div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="/"><img src="front/images/flyaway-filled.png" alt="" class="img-fluid site-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Flight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+          </div>
+      </nav>
+    </div>
+</header>
+<body>
+    <div class="container-lg">
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <div class="sideFilter py-3">
+                        <div class="filterHead d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#StopFilter" role="button" aria-expanded="false" aria-controls="StopFilter">
+                            <h6>
+                                Stops
+                            </h6>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="collapse show" id="StopFilter" >
+                            <div>
+                                <label class="filterLabel">Any
+                                    <input type="radio" checked="checked" name="stop">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">Direct
+                                    <input type="radio" name="stop">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">1 Stop
+                                    <input type="radio" name="stop">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">2 Stop
+                                    <input type="radio" name="stop">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sideFilter py-3">
+                        <div class="filterHead d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#Carrier" role="button" aria-expanded="false" aria-controls="Carrier">
+                            <h6>
+                                Carriers
+                            </h6>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="collapse" id="Carrier" >
+                            <div>
+                                <label class="filterLabel">Pakistan International Airline
+                                    <input type="checkbox" checked name="carrier">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">Emirates Airways
+                                    <input type="checkbox" checked name="carrier">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">Saudi Airlines
+                                    <input type="checkbox" checked name="carrier">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="filterLabel">Qatar Airways
+                                    <input type="checkbox" checked name="carrier">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarBanner d-md-block d-none">
+                        <div class="text-center">
+                            <img src="front/images/img1.webp" alt="" class="img-fluid mb-3">
+                            <img src="front/images/img2.webp" alt="" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="flightResult">
+                    <div class="filterResult border rounded-3 bg-white shadow-sm">
+                        <div class="d-flex">
+                            <button class="sortBtn active">Best
+                                <div class="text-secondary">
+                                    <span>
+                                        $310
+                                    </span>
+                                    .
+                                    <time datetime="">8h 30m</time>
+                                </div>
+                            </button>
+                            <button class="sortBtn">Cheapest
+                                <div class="text-secondary">
+                                    <span>
+                                        $250
+                                    </span>
+                                    <span>
+                                        .
+                                    </span>
+                                    <time datetime="">11h 45m</time>
+                                </div>
+                            </button>
+                            <button class="sortBtn">Fastest
+                                <div class="text-secondary">
+                                    <span>
+                                        $450
+                                    </span>
+                                    <span>
+                                        .
+                                    </span>
+                                    <time datetime="">7h 15m</time>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flightResultCard mt-3">
+                        <div class="flightCard oneway mb-3">
+                            <div class="row mx-0">
+                                <div class="col-sm-8 px-0">
+                                    <div
+                                        class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
+                                        <div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="timeDepart fw-bold">
+                                                    <time datetime="">17:00</time>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="operator d-flex align-items-center">
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center me-2 px-2 duration">
+                                                        <time datetime="">3h 30m</time>
+                                                    </div>
+                                                    <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Pakistan International Airline"
+                                                        class="operatorLogo d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="border rounded-1 d-flex align-items-center justify-content-center">
+                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="timeArvl fw-bold">
+                                                    <time datetime="">24:00</time>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="depart fw-bold">
+                                                        LHE
+                                                    </div>
+                                                    <div class="stop">
+                                                        <p class="mb-0 text-secondary border-bottom">
+                                                            <small>Direct</small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="dest fw-bold">
+                                                        DXB
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top mt-3 p-2 flightDetailBtn">
+                                            <button class="btn p-0" data-bs-toggle="modal"
+                                                data-bs-target="#flightResult1" data-bs-target="#flightResult1">
+                                                Flight Details
+                                            </button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade modal-lg" id="flightResult1" tabindex="-1"
+                                            aria-labelledby="flightResult1Label" aria-hidden="true"
+                                            data-bs-keyboard="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header border-0">
+                                                        <h5 class="modal-title" id="flightResult1Label">Trip details
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-end mb-2">
+                                                            <div class="d-flex flex-column align-items-start">
+                                                                <p class="mb-0 text-secondary small">
+                                                                    Flight No. <span>PK 305</span>
+                                                                </p>
+                                                                <p class="mb-0 fw-bold">
+                                                                    Lahore <span>&nbsp; <i
+                                                                            class="fa-solid fa-arrow-right-long"></i>
+                                                                        &nbsp;</span> Dubai
+                                                                </p>
+                                                            </div>
+                                                            <div class="d-flex flex-column align-items-end">
+                                                                <span class="text-secondary small">
+                                                                    Duration
+                                                                </span>
+                                                                <span class="">
+                                                                    <span><i
+                                                                            class="fa-regular fa-clock"></i></span><span
+                                                                        class="fw-bold"> 3h 30m</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flightDetail">
+                                                            <div class="p-2 rounded-3 my-shadow">
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">12:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 14 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Lahore . LHE
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Lahore International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center py-3">
+                                                                    <div class="w-90px text-end">
+                                                                        <time datetime="">3h 30m</time>
+                                                                    </div>
+                                                                    <div class="dot mx-3 plane-icon">
+                                                                        <i class="fa-solid fa-plane"></i>
+                                                                    </div>
+                                                                    <div
+                                                                        class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                        <div class="modal-logo">
+                                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="mb-0">
+                                                                                Pakistan International Airlines
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">15:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 15 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon dot-up"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Dubai . DXB
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Dubai International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer border-0">
+                                                        <span class="fw-bold">
+                                                            $300
+                                                        </span>
+                                                        <button type="button" class="bookBtn w-auto">
+                                                            Call Now
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 px-0 d-sm-block d-none">
+                                    <div
+                                        class="h-100 d-flex flex-column justify-content-center align-items-center py-2 px-3 bg-white shadow-sm rounded-3">
+                                        <div class="price fw-bold">
+                                            $300
+                                        </div>
+                                        <p class="mb-0">
+                                            CALL NOW ON
+                                        </p>
+                                        <a href="tel:02088995566" class="text-dark f-lg d-flex gap-1"><span><i class="fa fa-phone"
+                                                    aria-hidden="true"></i>
+                                        </span>02088995566</a>
+                                        <button class="bookBtn">
+                                            <a href="tel:02084329577" class="text-white f-lg">
+                                                Call Now</a>
+                                        </button>
+                                        <button class="bookBtn whatsAppBtn mt-2">
+                                            <a href="https://api.whatsapp.com/send/?phone=02088995566&amp;text=Deal+in+all+kind+of+Travel+Services.&amp;type=phone_number&amp;app_absent=0"
+                                                class="" target="_blank">
+                                                Whatsapp
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flightCard oneway mb-3">
+                            <div class="row mx-0">
+                                <div class="col-sm-8 px-0">
+                                    <div
+                                        class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
+                                        <div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="timeDepart fw-bold">
+                                                    <time datetime="">17:00</time>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="operator d-flex align-items-center">
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center me-2 px-2 duration">
+                                                        <time datetime="">3h 30m</time>
+                                                    </div>
+                                                    <div
+                                                        class="operatorLogo d-flex justify-content-between align-items-center">
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Pakistan International Airline"
+                                                            class="border rounded-1 d-flex align-items-center justify-content-center">
+                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Emirates Airline" class="border rounded-1 d-flex align-items-center justify-content-center
+                                                   d-flex align-items-center justify-content-center"> <img
+                                                                src="https://images.kiwi.com/airlines/32x32/EK.png?default=airline.png"
+                                                                class="img-fluid" alt="PIA Logo"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="timeArvl fw-bold">
+                                                    <time datetime="">24:00</time>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="depart fw-bold">
+                                                        LHE
+                                                    </div>
+                                                    <div class="stop">
+                                                        <p class="mb-0 text-secondary border-bottom">
+                                                            <small>1 stop . <span>Karachi</span></small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="dest fw-bold">
+                                                        DXB
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top mt-3 p-2 flightDetailBtn">
+                                            <button class="btn p-0" data-bs-toggle="modal"
+                                                data-bs-target="#flightResult2">
+                                                Flight Details
+                                            </button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade modal-lg" id="flightResult2" tabindex="-1"
+                                            aria-labelledby="flightResult2Label" aria-hidden="true"
+                                            data-bs-keyboard="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header border-0">
+                                                        <h5 class="modal-title" id="flightResult2Label">Trip details
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-end mb-2">
+                                                            <div class="d-flex flex-column align-items-start">
+                                                                <p class="mb-0 text-secondary small">
+                                                                    Flight No. <span>PK 305</span>
+                                                                </p>
+                                                                <p class="mb-0 fw-bold">
+                                                                    Lahore <span>&nbsp; <i
+                                                                            class="fa-solid fa-arrow-right-long"></i>
+                                                                        &nbsp;</span> Dubai
+                                                                </p>
+                                                            </div>
+                                                            <div class="d-flex flex-column align-items-end">
+                                                                <span class="text-secondary small">
+                                                                    Duration
+                                                                </span>
+                                                                <span class="">
+                                                                    <span><i
+                                                                            class="fa-regular fa-clock"></i></span><span
+                                                                        class="fw-bold"> 3h 30m</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flightDetail">
+                                                            <div class="p-2 rounded-3 my-shadow">
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">12:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 14 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Lahore . LHE
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Lahore International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center py-3">
+                                                                    <div class="w-90px text-end">
+                                                                        <time datetime="">3h 30m</time>
+                                                                    </div>
+                                                                    <div class="dot mx-3 plane-icon">
+                                                                        <i class="fa-solid fa-plane"></i>
+                                                                    </div>
+                                                                    <div
+                                                                        class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                        <div class="modal-logo">
+                                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="mb-0">
+                                                                                Pakistan International Airlines
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">15:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 15 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon dot-up"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Karachi . KCI
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Jinnah International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="layoverDetail small px-3 my-3">
+                                                            <div class="">
+                                                                <p class="mb-0 text-secondary">
+                                                                    <span>
+                                                                        <span><i
+                                                                                class="fa-regular fa-clock"></i></span><span
+                                                                            class=""> 3h 30m layover</span>
+                                                                    </span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flightDetail">
+                                                            <div class="p-2 rounded-3 my-shadow">
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">12:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 14 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Karachi . KCI
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Jinnah International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center py-3">
+                                                                    <div class="w-90px text-end">
+                                                                        <time datetime="">2h 30m</time>
+                                                                    </div>
+                                                                    <div class="dot mx-3 plane-icon">
+                                                                        <i class="fa-solid fa-plane"></i>
+                                                                    </div>
+                                                                    <div
+                                                                        class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                        <div class="modal-logo">
+                                                                            <img src="https://images.kiwi.com/airlines/32x32/EK.png?default=airline.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="mb-0">
+                                                                                Emirates Airlines
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex">
+                                                                    <div
+                                                                        class="d-flex flex-column align-items-end w-90px">
+                                                                        <span class="fw-bold">
+                                                                            <time datetime="">15:35</time>
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Fri, 15 Feb
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="dot mx-3">
+                                                                        <span class="dot-icon dot-up"><i
+                                                                                class="fa-solid fa-circle"></i></span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="fw-bold">
+                                                                            Dubai . DXB
+                                                                        </span>
+                                                                        <span class="text-secondary small">
+                                                                            Dubai International Airport
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer border-0">
+                                                        <span class="fw-bold">
+                                                            $300
+                                                        </span>
+                                                        <button type="button" class="bookBtn w-auto">
+                                                            Call Now
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 px-0 d-sm-block d-none">
+                                    <div
+                                        class="h-100 d-flex flex-column justify-content-center align-items-center py-2 px-3 bg-white shadow-sm rounded-3">
+                                        <div class="price fw-bold">
+                                            $300
+                                        </div>
+                                        <p class="mb-0">
+                                            CALL NOW ON
+                                        </p>
+                                        <a href="tel:02088995566" class="text-dark f-lg d-flex gap-1"><span><i class="fa fa-phone"
+                                                    aria-hidden="true"></i>
+                                        </span>02088995566</a>
+                                        <button class="bookBtn">
+                                            <a href="tel:02084329577" class="text-white f-lg">
+                                                Call Now</a>
+                                        </button>
+                                        <button class="bookBtn whatsAppBtn mt-2">
+                                            <a href="https://api.whatsapp.com/send/?phone=02088995566&amp;text=Deal+in+all+kind+of+Travel+Services.&amp;type=phone_number&amp;app_absent=0"
+                                                class="" target="_blank">
+                                                Whatsapp
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flightCard oneway mb-3">
+                            <div class="row mx-0">
+                                <div class="col-sm-8 px-0">
+                                    <div
+                                        class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
+                                        <div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="timeDepart fw-bold">
+                                                    <time datetime="">17:00</time>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="operator d-flex align-items-center">
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center me-2 px-2 duration">
+                                                        <time datetime="">3h 30m</time>
+                                                    </div>
+                                                    <div
+                                                        class="operatorLogo d-flex justify-content-between align-items-center">
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Pakistan International Airline"
+                                                            class="border rounded-1 d-flex align-items-center justify-content-center">
+                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                class="img-fluid" alt="PIA Logo" title="PIA">
+                                                        </div>
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Emirates Airline" class="border rounded-1 d-flex align-items-center justify-content-center
+                                                   d-flex align-items-center justify-content-center"> <img
+                                                                src="https://images.kiwi.com/airlines/32x32/EK.png?default=airline.png"
+                                                                class="img-fluid" alt="PIA Logo" title="Emirates"></div>
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Oman Air" class="border rounded-1 d-flex align-items-center justify-content-center
+                                                       d-flex align-items-center justify-content-center" title="PIA">
+                                                            <img src="https://images.kiwi.com/airlines/32x32/WY.png?default=airline.png"
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="timeArvl fw-bold">
+                                                    <time datetime="">24:00</time>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="depart fw-bold">
+                                                        LHE
+                                                    </div>
+                                                    <div class="stop">
+                                                        <p class="mb-0 text-secondary border-bottom">
+                                                            <small>2 stop . <span>Karachi, Riyad</span></small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="dest fw-bold">
+                                                        DXB
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top mt-3 p-2 flightDetailBtn">
+                                            <button class="btn p-0">
+                                                Flight Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 px-0 d-sm-block d-none">
+                                    <div
+                                        class="h-100 d-flex flex-column justify-content-center align-items-center py-2 px-3 bg-white shadow-sm rounded-3">
+                                        <div class="price fw-bold">
+                                            $300
+                                        </div>
+                                        <p class="mb-0">
+                                            CALL NOW ON
+                                        </p>
+                                        <a href="tel:02088995566" class="text-dark f-lg d-flex gap-1"><span><i class="fa fa-phone"
+                                                    aria-hidden="true"></i>
+                                        </span>02088995566</a>
+                                        <button class="bookBtn">
+                                            <a href="tel:02084329577" class="text-white f-lg">
+                                                Call Now</a>
+                                        </button>
+                                        <button class="bookBtn whatsAppBtn mt-2">
+                                            <a href="https://api.whatsapp.com/send/?phone=02088995566&amp;text=Deal+in+all+kind+of+Travel+Services.&amp;type=phone_number&amp;app_absent=0"
+                                                class="" target="_blank">
+                                                Whatsapp
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flightCard return mb-3">
+                            <div class="row mx-0">
+                                <div class="col-sm-8 px-0">
+                                    <div
+                                        class="p-2 bg-white shadow-sm rounded-3 h-100 d-flex justify-content-between flex-column">
+                                        <div>
+                                            <p class="text-secondary mb-0 small">
+                                                Outbound
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="timeDepart fw-bold">
+                                                    <time datetime="">17:00</time>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="operator d-flex align-items-center">
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center me-2 px-2 duration">
+                                                        <time datetime="">3h 30m</time>
+                                                    </div>
+                                                    <div
+                                                        class="operatorLogo d-flex justify-content-between align-items-center">
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Pakistan International Airline"
+                                                            class="border rounded-1 d-flex align-items-center justify-content-center">
+                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="timeArvl fw-bold">
+                                                    <time datetime="">24:00</time>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="depart fw-bold">
+                                                        LHE
+                                                    </div>
+                                                    <div class="stop">
+                                                        <p class="mb-0 text-secondary border-bottom">
+                                                            <small>Direct</small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="dest fw-bold">
+                                                        DXB
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="separator">
+                                        <div>
+                                            <p class="text-secondary mb-0 small">
+                                                Inbound
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="timeDepart fw-bold">
+                                                    <time datetime="">17:00</time>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="operator d-flex align-items-center">
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center me-2 px-2 duration">
+                                                        <time datetime="">3h 30m</time>
+                                                    </div>
+                                                    <div
+                                                        class="operatorLogo d-flex justify-content-between align-items-center">
+                                                        <div data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Pakistan International Airline"
+                                                            class="border rounded-1 d-flex align-items-center justify-content-center">
+                                                            <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                class="img-fluid" alt="PIA Logo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-grow-1 mx-2">
+                                                    <hr>
+                                                </div>
+                                                <div class="timeArvl fw-bold">
+                                                    <time datetime="">24:00</time>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="depart fw-bold">
+                                                        LHE
+                                                    </div>
+                                                    <div class="stop">
+                                                        <p class="mb-0 text-secondary border-bottom">
+                                                            <small>Direct</small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="dest fw-bold">
+                                                        DXB
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top mt-3 p-2 flightDetailBtn">
+                                            <button class="btn p-0" data-bs-toggle="modal"
+                                                data-bs-target="#flightResult3">
+                                                Flight Details
+                                            </button>
+                                        </div>
+                                        <div class="modal fade modal-lg" id="flightResult3" tabindex="-1"
+                                            aria-labelledby="flightResult3Label" aria-hidden="true"
+                                            data-bs-keyboard="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header border-0">
+                                                        <h5 class="modal-title" id="flightResult3Label">Trip details
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="returnFlight">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-end mb-2">
+                                                                <div class="d-flex flex-column align-items-start">
+                                                                    <p class="mb-0 text-secondary small">
+                                                                        Flight No. <span>PK 305</span>
+                                                                    </p>
+                                                                    <p class="mb-0 fw-bold">
+                                                                        Lahore <span>&nbsp; <i
+                                                                                class="fa-solid fa-arrow-right-long"></i>
+                                                                            &nbsp;</span> Dubai
+                                                                    </p>
+                                                                </div>
+                                                                <div class="d-flex flex-column align-items-end">
+                                                                    <span class="text-secondary small">
+                                                                        Duration
+                                                                    </span>
+                                                                    <span class="">
+                                                                        <span><i
+                                                                                class="fa-regular fa-clock"></i></span><span
+                                                                            class="fw-bold"> 3h 30m</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flightDetail">
+                                                                <div class="p-2 rounded-3 my-shadow">
+                                                                    <div class="d-flex">
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-end w-90px">
+                                                                            <span class="fw-bold">
+                                                                                <time datetime="">12:35</time>
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Fri, 14 Feb
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="dot mx-3">
+                                                                            <span class="dot-icon"><i
+                                                                                    class="fa-solid fa-circle"></i></span>
+                                                                        </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="fw-bold">
+                                                                                Lahore . LHE
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Lahore International Airport
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center py-3">
+                                                                        <div class="w-90px text-end">
+                                                                            <time datetime="">3h 30m</time>
+                                                                        </div>
+                                                                        <div class="dot mx-3 plane-icon">
+                                                                            <i class="fa-solid fa-plane"></i>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                            <div class="modal-logo">
+                                                                                <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                                    alt="" class="img-fluid">
+                                                                            </div>
+                                                                            <div>
+                                                                                <p class="mb-0">
+                                                                                    Pakistan International Airlines
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex">
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-end w-90px">
+                                                                            <span class="fw-bold">
+                                                                                <time datetime="">15:35</time>
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Fri, 15 Feb
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="dot mx-3">
+                                                                            <span class="dot-icon dot-up"><i
+                                                                                    class="fa-solid fa-circle"></i></span>
+                                                                        </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="fw-bold">
+                                                                                Dubai . DXB
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Dubai International Airport
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="my-3 d-flex justify-content-center align-items-center position-relative">
+                                                            <p class="mb-0 px-2 bg-white small" style="z-index: 1;">
+                                                                12 Nights in Dubai
+                                                            </p>
+                                                            <hr class="position-absolute border-secondary"
+                                                                style="z-index: 0;top: 50%;transform: translateY(-50%);margin: 0;">
+                                                        </div>
+                                                        <div class="returnFlight">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-end mb-2">
+                                                                <div class="d-flex flex-column align-items-start">
+                                                                    <p class="mb-0 text-secondary small">
+                                                                        Flight No. <span>PK 305</span>
+                                                                    </p>
+                                                                    <p class="mb-0 fw-bold">
+                                                                        Dubai <span>&nbsp; <i
+                                                                                class="fa-solid fa-arrow-right-long"></i>
+                                                                            &nbsp;</span> Lahore
+                                                                    </p>
+                                                                </div>
+                                                                <div class="d-flex flex-column align-items-end">
+                                                                    <span class="text-secondary small">
+                                                                        Duration
+                                                                    </span>
+                                                                    <span class="">
+                                                                        <span><i
+                                                                                class="fa-regular fa-clock"></i></span><span
+                                                                            class="fw-bold"> 3h 30m</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flightDetail">
+                                                                <div class="p-2 rounded-3 my-shadow">
+                                                                    <div class="d-flex">
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-end w-90px">
+                                                                            <span class="fw-bold">
+                                                                                <time datetime="">12:35</time>
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Fri, 14 Feb
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="dot mx-3">
+                                                                            <span class="dot-icon"><i
+                                                                                    class="fa-solid fa-circle"></i></span>
+                                                                        </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="fw-bold">
+                                                                                Dubai . DBX
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Dubai International Airport
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center py-3">
+                                                                        <div class="w-90px text-end">
+                                                                            <time datetime="">3h 30m</time>
+                                                                        </div>
+                                                                        <div class="dot mx-3 plane-icon">
+                                                                            <i class="fa-solid fa-plane"></i>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex align-items-center gap-1 aLine pe-1 small">
+                                                                            <div class="modal-logo">
+                                                                                <img src="https://images.kiwi.com/airlines/32x32/PK.png?default=airline.png"
+                                                                                    alt="" class="img-fluid">
+                                                                            </div>
+                                                                            <div>
+                                                                                <p class="mb-0">
+                                                                                    Pakistan International Airlines
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex">
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-end w-90px">
+                                                                            <span class="fw-bold">
+                                                                                <time datetime="">15:35</time>
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Fri, 15 Feb
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="dot mx-3">
+                                                                            <span class="dot-icon dot-up"><i
+                                                                                    class="fa-solid fa-circle"></i></span>
+                                                                        </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="fw-bold">
+                                                                                Lahore . LHE
+                                                                            </span>
+                                                                            <span class="text-secondary small">
+                                                                                Lahore International Airport
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer border-0">
+                                                        <span class="fw-bold">
+                                                            $300
+                                                        </span>
+                                                        <button type="button" class="bookBtn w-auto">
+                                                            Call Now
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 px-0 d-sm-block d-none">
+                                    <div
+                                        class="h-100 d-flex flex-column justify-content-center align-items-center py-2 px-3 bg-white shadow-sm rounded-3">
+                                        <div class="price fw-bold">
+                                            $300
+                                        </div>
+                                        <p class="mb-0">
+                                            CALL NOW ON
+                                        </p>
+                                        <a href="tel:02088995566" class="text-dark f-lg d-flex gap-1"><span><i class="fa fa-phone"
+                                                    aria-hidden="true"></i>
+                                        </span>02088995566</a>
+                                        <button class="bookBtn">
+                                            <a href="tel:02084329577" class="text-white f-lg">
+                                                Call Now</a>
+                                        </button>
+                                        <button class="bookBtn whatsAppBtn mt-2">
+                                            <a href="https://api.whatsapp.com/send/?phone=02088995566&amp;text=Deal+in+all+kind+of+Travel+Services.&amp;type=phone_number&amp;app_absent=0"
+                                                class="" target="_blank">
+                                                Whatsapp
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
