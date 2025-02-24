@@ -4,22 +4,27 @@ body {
     background-color: #f4f7f9;
     font-weight: 300;
 }
-
+:root{
+    --primaryColor: rgb(105, 12, 54);
+    --primaryHover: rgb(78, 9, 40);
+    --btnGradient: linear-gradient(135deg, rgb(105, 12, 54) 20%, rgb(213, 23 ,109));
+    --btnGradientHover: linear-gradient(135deg, rgb(213, 23 ,109)20%, rgb(105, 12, 54));
+}
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--primaryColor)
 }
 a:hover{
     color: #000;
 }
 header{
-    background-color: rgb(105, 12, 54);
+    background-color: var(--primaryColor);
 }
 .site-logo{
     width: 120px;
 }
 .flight-searchForm{
-    background-color: rgb(105, 12, 54);
+    background-color: var(--primaryColor);
 }
 .form-element input,
 .form-element select {
@@ -49,9 +54,12 @@ header{
     height: 1rem;
     vertical-align: middle;
 }
-.carousel-item{
-    height: 400px;
+#carouselHomeHead .carousel-item{
+    height: 550px;
 }
+ .carousel-item img{
+    object-position: right;
+ }
 .flightSearch{
     top: 50%;
     left: 50%;
@@ -60,7 +68,7 @@ header{
     width: 100%;
 }
 .search-flight-btn {
-    background: linear-gradient(135deg, rgb(156, 24, 83), rgb(170, 62, 111));
+    background: var(--btnGradient);
     border: none;
     color: #fff;
     padding: 8px 30px;
@@ -74,7 +82,7 @@ header{
     cursor: pointer;
 }
 .search-flight-btn:hover {
-    background: linear-gradient(135deg, rgb(170, 62, 111), rgb(156, 24, 83));
+    background: var(--btnGradientHover);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
     color: #fff;
@@ -97,8 +105,8 @@ header{
 }
 
 .sortBtn.active {
-    border-bottom: 3px solid #0072c8;
-    color: #0072c8;
+    border-bottom: 3px solid var(--primaryColor);
+    color: var(--primaryColor);
 }
 
 .sortBtn:first-child.active {
@@ -125,33 +133,28 @@ header{
 }
 
 .bookBtn {
-    background-color: #0072c8;
+    background: var(--btnGradient);
     color: #fff;
-    border-color: #0072c8;
-    outline-color: #0072c8;
+    border: none;
     width: 100%;
     border-radius: .3rem;
-    transition: all 0.5s linear;
+    transition: background 5s linear;
 }
 
 .bookBtn.whatsAppBtn {
-    color: #0072c8;
-    background-color: #fff;
-    border-color: #0072c8;
-    outline-color: #0072c8;
+    color: rgb(105, 12, 54);
+    background: #fff;
+    border: 2px solid rgb(105, 12, 54);
 }
 
 .bookBtn:hover {
-    background-color: #025799;
-    border-color: #025799;
-    outline-color: #025799;
+    background: var(--btnGradientHover);
 }
 
 .bookBtn.whatsAppBtn:hover {
-    color: #0072c8;
-    background-color: #fff;
-    border-color: #0072c8;
-    outline-color: #0072c8;
+    color: var(--primaryHover);
+    background: #fff;
+    border-color: var(--primaryHover);
 }
 
 /* .operatorLogo:has(img:nth-child(2)) img:first-child {
@@ -336,12 +339,24 @@ input[type="checkbox"]~.checkmark {
     transform: translate(-50%, -50%);
     background-color: #0072c8;
 }
-
+footer{
+    background-color: #fff;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+.footLogo{
+    width: 160px;
+}
 .f-lg {
     font-size: 1.5rem;
     font-weight: 500;
 }
-
+.socialIcon{
+    color: var(--primaryColor);
+    font-size: 1.5rem;
+}
+.disc{
+    background-color: var(--primaryColor);
+}
 @media screen and (max-width: 768px) {
     .sortBtn {
         padding: .5rem 1rem;

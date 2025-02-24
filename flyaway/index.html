@@ -28,14 +28,14 @@
     <header>
         <div class="container-lg">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="/"><img src="front/images/flyaway-filled.png" alt=""
+                <a class="navbar-brand" href="index.html"><img src="front/images/flyaway-filled.png" alt=""
                         class="img-fluid site-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Flight</a>
@@ -51,19 +51,19 @@
         </div>
     </header>
     <div class="position-relative">
-        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselHomeHead" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="1000">
                     <img src="https://www.galaxytravelandtours.co.uk/frontend_assets_new/img/slider/slider_bg03.jpg"
-                        class="d-block w-100" alt="...">
+                        class="" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="1000">
                     <img src="https://www.galaxytravelandtours.co.uk/frontend_assets_new/img/slider/slider_bg01.jpg"
-                        class="d-block w-100" alt="...">
+                        class="" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="1000">
                     <img src="https://www.galaxytravelandtours.co.uk/frontend_assets_new/img/slider/slider_bg03.jpg"
-                        class="d-block w-100" alt="...">
+                        class="" alt="...">
                 </div>
             </div>
         </div>
@@ -78,8 +78,8 @@
                                 <div class="form-element py-md-2 p-0 bg-white rounded-1 position-relative">
                                     <label for="" class="text-center fw-bold d-md-block d-none">FLYING FROM
                                     </label>
-                                    <input type="text" class="form-control text-center" id="departFrom" autocomplete="off"
-                                        placeholder="Depart From">
+                                    <input type="text" class="form-control text-center" id="departFrom"
+                                        autocomplete="off" placeholder="Depart From">
                                     <div id="departFromlocation"
                                         class="selectLocation position-absolute w-100 p-2 bg-light rounded"
                                         style="display: none;">
@@ -233,9 +233,10 @@
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 order-sm-0 order-last">
-                                <div class="form-element d-flex justify-content-center align-items-center h-100 pb-sm-3">
-                                    <button type="button" class="btn btn-lg btn-info search-flight-btn">Show Flights <span
-                                            class="ms-1">
+                                <div
+                                    class="form-element d-flex justify-content-center align-items-center h-100 pb-sm-3">
+                                    <button type="button" class="btn btn-lg btn-info search-flight-btn">Show Flights
+                                        <span class="ms-1">
                                             <svg fill="#ffffff" viewBox="0 0 36 36" width="35" height="35" version="1.1"
                                                 preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff"
@@ -279,11 +280,11 @@
     </div>
     <div class="container-lg">
         <div class="ourValues mb-4">
-            <div class="row mx-0">
-                <div class="col-md-4">
+            <div class="row mx-0 justify-content-center">
+                <div class="col-md-4 col-sm-6">
                     <div class="px-4 text-center">
                         <img src="https://images.skypicker.com/?image=https%3A%2F%2Fimages.kiwi.com%2Fsearch%2Fusps%2Ftrust.png%3Fv2&width=320&height=216"
-                            alt="">
+                            alt="" class="img-fluid">
                         <h5>
                             Effortless Flight Booking
                         </h5>
@@ -292,10 +293,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 col-sm-6">
                     <div class="px-4 text-center">
                         <img src="https://images.skypicker.com/?image=https%3A%2F%2Fimages.kiwi.com%2Fsearch%2Fusps%2Fguarantee.png%3Fv2&width=320&height=216"
-                            alt="">
+                            alt="" class="img-fluid">
                         <h5>
                             Stress-Free Travel
                         </h5>
@@ -304,10 +305,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 col-sm-6">
                     <div class="px-4 text-center">
                         <img src="https://images.skypicker.com/?image=https%3A%2F%2Fimages.kiwi.com%2Fsearch%2Fusps%2Ftrust.png%3Fv2&width=320&height=216"
-                            alt="">
+                            alt="" class="img-fluid">
                         <h5>
                             Smart Booking, Smarter Travel
                         </h5>
@@ -320,7 +321,7 @@
             </div>
         </div>
         <hr class="dividor">
-        <div class="popularDest mt-5">
+        <div class="popularDest my-5">
             <h2 class="mb-4 ms-3">
                 Popular destinations
             </h2>
@@ -544,4 +545,81 @@
             </div>
         </div>
     </div>
+    <footer class="pt-4">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footerItem">
+                        <div class="footLogo mb-4">
+                            <img src="front/images/FlyAwayLogo.png" alt="" class="img-fluid">
+                        </div>
+                        <!-- <div class="about">
+                            <p>
+                                Flyawayworld Travels is a renowned name in the travel industry, dedicated to providing
+                                exceptional service and customer satisfaction. Our priority is to ensure that every
+                                traveler enjoys a seamless experience with top-quality service. We offer affordable
+                                flight tickets with a **100% price guarantee**, ensuring the best value for our
+                                customers. Our professional agents are committed to assisting travelers with care,
+                                making every journey smooth and enjoyable. Your satisfaction is our ultimate goal!
+                            </p>
+                        </div> -->
+                        <div class="socialLinks d-flex gap-2">
+                            <a href="" class="socialIcon instaIcon"><i class="fa-brands fa-instagram fa-fw"></i></a>
+                            <a href="" class="socialIcon xIcon"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="" class="socialIcon fbIcon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="socialIcon linkedinIcon"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="footerItem">
+                        <h6>
+                            Explore
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li class="nav-item py-2">
+                                <a href="" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a href="" class="nav-link">Contact Us</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a href="" class="nav-link">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a href="" class="nav-link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="footerItem">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="footerItem">
+                        <h6>
+                            Contact Us
+                        </h6>
+                        <address class="d-flex flex-column gap-2">
+                            <span>124 City Road, London, England, EC1V 2NX<br></span>
+                            <span>
+                                <a href="mailto:info@flayawayworld.com" class="d-flex gap-1"><span><i class="fa-solid fa-envelope"></i></span>info@flayawayworld.com</a>
+                            </span>
+                            <span><a href="tel:+442084329577" class="d-flex gap-1"><span><i class="fa fa-phone" aria-hidden="true"></i></span>+442084329577</a></span>
+                            <span><a href="https://api.whatsapp.com/send/?phone=02088995566&text=Deal+in+all+kind+of+Travel+Services.&type=phone_number&app_absent=0" class="d-flex gap-1"><span><i class="fa-brands fa-whatsapp"></i></span>02088995566</a></span>
+                        </address>
+                        <p>Company Register Number 14424770</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-2 disc">
+            <div class="container-lg">
+                <p class="text-white mb-0">
+                    Copyright © 2025. All Rights Reserved By <a href="" class="" style="color: rgb(255, 255, 255, .8)">Flyawayworld</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
