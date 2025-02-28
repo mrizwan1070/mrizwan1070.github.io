@@ -55,7 +55,7 @@ header{
     vertical-align: middle;
 }
 #carouselHomeHead .carousel-item{
-    min-height: 550px;
+    height: 450px;
 }
  .carousel-item img{
     object-position: right;
@@ -380,6 +380,17 @@ footer{
     flex: 1 0 auto;
     height: 100%;
 }
+p.testiText{
+    margin-top: 30px;
+}
+.qoutIcon{
+    width: 30px;
+    top: 7px;
+    left: 1rem;
+}
+.qoutIcon svg path{
+    fill: #373a42;
+}
 .testimonialSlider-card-inner > div{
     position: relative;
     overflow: hidden;
@@ -388,12 +399,41 @@ footer{
     flex-direction: column;
     justify-content: space-between;
 }
+.star-rating {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f39c12;
+}
+.profileBtn:hover{
+    box-shadow: none;
+}
+.blogs{
+    background-color: #000;
+    color: #fff;
+}
+.blog-card {
+    background: white;
+    color: #000;
+}
 .blog-summery{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     line-clamp: 2;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+a.learMorebtn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 9px 15px;
+}
+.whatsAppChat {
+    width: 75px;
+    bottom: 49px;
+    right: 49px;
+    background: #00c95f;
+    border-radius: 50%;
+    padding: 8px;
 }
 @media screen and (max-width: 768px) {
     .sortBtn {

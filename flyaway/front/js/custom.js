@@ -23,7 +23,6 @@ jQuery(document).ready(function () {
   });
   $(".pessanger").click(function () {
       $(".pessangerSelect").css("display", "block");
-      console.log("clicked");
   });
   $("#pessangerClose").click(function () {
       $(".pessangerSelect").css("display", "none");
