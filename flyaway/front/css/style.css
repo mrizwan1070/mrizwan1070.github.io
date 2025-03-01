@@ -434,6 +434,7 @@ a.learMorebtn {
     background: #00c95f;
     border-radius: 50%;
     padding: 8px;
+    z-index: 1;
 }
 @media screen and (max-width: 768px) {
     .sortBtn {
