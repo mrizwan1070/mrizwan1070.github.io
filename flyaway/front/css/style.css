@@ -429,6 +429,7 @@ a.learMorebtn {
 }
 .whatsAppChat {
     width: 75px;
+    height: 75px;
     bottom: 49px;
     right: 49px;
     background: #00c95f;
