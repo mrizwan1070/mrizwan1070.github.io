@@ -28,7 +28,7 @@
     <header>
         <div class="container-lg">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.html"><img src="front/images/flyaway-filled.png" alt=""
+                <a class="navbar-brand" href="index.html"><img src="front/images/gcf-logo.png" alt=""
                         class="img-fluid site-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -51,7 +51,7 @@
         </div>
     </header>
     <div class="position-relative">
-        <div id="carouselHomeHead" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- <div id="carouselHomeHead" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="1000">
                     <img src="https://www.galaxytravelandtours.co.uk/frontend_assets_new/img/slider/slider_bg03.jpg"
@@ -66,214 +66,509 @@
                         class="" alt="...">
                 </div>
             </div>
+        </div> -->
+        <div>
+            <!-- <img src="/flyaway/front/images/header.jpg" class="img-fluid header-img" alt=""> -->
+            <video src="/flyaway/front/images/header.mp4" id="videoPlayer" class="w-100" autoplay loop
+                style="filter: brightness(0.5);"></video>
+            <script>
+                var video = document.getElementById("videoPlayer");
+                var startTime = 1; // Start the loop at 10 seconds
+                var endTime = 15;   // End the loop at 20 seconds (play for 10 seconds)
+
+                // Set the initial start time
+                video.currentTime = startTime;
+
+                video.addEventListener("timeupdate", function () {
+                    // If current time exceeds the end time, jump back to the start time
+                    if (video.currentTime >= endTime) {
+                        video.currentTime = startTime;
+                        video.play(); // Ensure it keeps playing after the jump
+                    }
+                });
+            </script>
+
         </div>
         <div class="flightSearch position-absolute">
             <div class="container-lg">
-                <div class="flight-searchForm p-md-4 p-2 rounded">
-                    <p class="text-white fw-bold">
-                        Find Cheap Flights World Wide</p>
-                    <form action="" class="mb-0">
-                        <div class="row mx-0">
-                            <div class="col-md-3 col-sm-6 px-1 mb-3">
-                                <div class="form-element py-md-2 p-0 bg-white rounded-1 position-relative">
-                                    <label for="" class="text-center fw-bold d-md-block d-none">FLYING FROM
-                                    </label>
-                                    <input type="text" class="form-control text-center" id="departFrom"
-                                        autocomplete="off" placeholder="Depart From">
-                                    <div id="departFromlocation"
-                                        class="selectLocation position-absolute w-100 p-2 bg-light rounded"
-                                        style="display: none;">
-                                        <ul class="list-unstyled border mb-0">
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                        </ul>
+                <div>
+                    <div class="text-white text-center">
+                        <h1 style="font-size: 4.5rem;">Book flights early,<br>pay flexibly</h1>
+                        <p style="font-size: 1.5rem;">We'll save your seat, while you save the rest.</p>
+                    </div>
+                    <div class="flight-searchForm py-md-4 py-2 rounded">
+                        <!-- <p class="text-white fw-bold">
+                        Find Cheap Flights World Wide</p> -->
+                        <form action="" class="mb-0">
+                            <div class="d-flex mb-3 border-bottom px-md-4 px-2">
+                                <div class="d-flex mb-sm-0 pe-4 justify-content-between border-end">
+                                    <div class="trip d-flex">
+
+                                        <div class="trip-buttons">
+                                            <input type="radio" name="trip" id="oneway" value="oneway" checked>
+                                            <label for="oneway" class="trip-btn">One Way</label>
+
+                                            <input type="radio" name="trip" id="round" value="round">
+                                            <label for="round" class="trip-btn">Round</label>
+                                        </div>
+
+
+                                        <script>
+                                            function toggleTripDropdown() {
+                                                document.getElementById("tripDropdown").classList.toggle("open");
+                                            }
+
+                                            function updateTrip() {
+                                                const selected = document.querySelector('input[name="trip"]:checked').nextElementSibling.innerText;
+                                                document.getElementById("selectedTrip").innerText = selected;
+                                                document.getElementById("tripDropdown").classList.remove("open");
+                                            }
+                                        </script>
+
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 px-1 mb-3">
-                                <div class="form-element py-md-2 p-0 bg-white rounded-1 position-relative">
-                                    <label for="" class="text-center fw-bold d-md-block d-none">FLYING TO
-                                    </label>
-                                    <input type="text" class="form-control text-center" id="flyTo" autocomplete="off"
-                                        placeholder="Destination">
-                                    <div id="flyTolocation"
-                                        class="selectLocation position-absolute w-100 p-2 bg-light rounded"
-                                        style="display: none;">
-                                        <ul class="list-unstyled border mb-0">
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                            <li class="bg-white border-bottom p-1">
-                                                London
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 px-1 mb-3">
-                                <div class="form-element py-md-2 p-0 bg-white rounded-1">
-                                    <label for="" class="text-center fw-bold d-md-block d-none">DATES
-                                    </label>
-                                    <div class="row mx-0 flex-nowrap">
-                                        <div class="col px-1">
-                                            <input type="text" id="departDate" onfocus="(this.type='date')"
-                                                onblur="(this.type='text')" class="form-control text-center"
-                                                placeholder="Depart date">
-                                        </div>
-                                        <div class="col px-1" id="returnDateContainer" style="display: block;">
-                                            <input type="text" id="returnDate" onfocus="(this.type='date')"
-                                                onblur="(this.type='text')" class="form-control text-center"
-                                                placeholder="Return date">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 px-1 mb-3">
-                                <div class="form-element py-md-2 p-0 bg-white rounded-1 position-relative pessanger">
-                                    <label for="" class="text-center fw-bold d-md-block d-none">PASSENGERS</label>
-                                    <input type="text" value="1 Adult" readonly class="form-control text-center"
-                                        id="totalPessanger">
-                                    <div class="pessangerSelect bg-light position-absolute w-100 p-2"
-                                        style="display: none;">
-                                        <div class="row mx-0">
-                                            <div class="col px-1">
-                                                <div class="adultSelect border p-1 bg-white">
-                                                    <label for="selectAdult" id="adultLabel">Adult</label>
-                                                    <select name="selectAdult" id="selectAdult"
-                                                        class="form-select lh-1 p-0">
-                                                        <option value="1" selected>1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6">6</option>
-                                                        <option value="7">7</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col px-1">
-                                                <div class="childSelect border p-1 bg-white">
-                                                    <label for="">Child</label>
-                                                    <select name="" id="selectChild" class="form-select lh-1 p-0">
-                                                        <option value="0" selected>0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6">6</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col px-1">
-                                                <div class="infantSelect border p-1 bg-white">
-                                                    <label for="">Infant</label>
-                                                    <select name="" id="selectInfant" class="form-select lh-1 p-0">
-                                                        <option value="0" selected>0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6">6</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-end mt-1">
-                                            <button type="button" class="btn btn-info me-1 py-1"
-                                                id="setPessanger">Submit</button>
-                                            <button type="button" class="btn btn-info py-1"
-                                                id="pessangerClose">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 px-1 mb-3">
-                                <div class="form-element py-md-2 p-0 bg-white rounded-1">
-                                    <label for="" class="text-center fw-bold d-md-block d-none">NAME
-                                    </label>
-                                    <input type="text" class="form-control text-center" placeholder="Your name">
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 px-1 mb-3">
-                                <div class="form-element py-md-2 p-0 bg-white rounded-1">
-                                    <label for="" class="text-center fw-bold d-md-block d-none">PHONE
-                                    </label>
-                                    <input type="text" class="form-control text-center" placeholder="Your phone">
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 px-1 mb-3">
-                                <div class="form-element py-md-2 p-0 bg-white rounded-1">
-                                    <label for="" class="text-center fw-bold d-md-block d-none">EMAIL
-                                    </label>
-                                    <input type="email" class="form-control text-center" placeholder="Your email">
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 order-sm-0 order-last">
-                                <div
-                                    class="form-element d-flex justify-content-center align-items-center h-100 pb-sm-3">
-                                    <button type="button" class="btn btn-lg btn-info search-flight-btn">Show Flights
-                                        <span class="ms-1">
-                                            <svg fill="#ffffff" viewBox="0 0 36 36" width="35" height="35" version="1.1"
-                                                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff"
-                                                stroke-width="0.00036">
-                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                </g>
-                                                <g id="SVGRepo_iconCarrier">
-                                                    <title>plane-line</title>
-                                                    <path class="clr-i-outline clr-i-outline-path-1"
-                                                        d="M35.77,8.16a2.43,2.43,0,0,0-1.9-2L28,4.87a4.5,4.5,0,0,0-3.65.79L7,18.3,2.14,18.1A1.86,1.86,0,0,0,.91,21.41l5,3.93c.6.73,1,.59,10.93-4.82l.93,9.42a1.36,1.36,0,0,0,.85,1.18,1.43,1.43,0,0,0,.54.1,1.54,1.54,0,0,0,1-.41l2.39-2.18a1.52,1.52,0,0,0,.46-.83L25.2,15.9c3.57-2,6.95-3.88,9.36-5.25A2.43,2.43,0,0,0,35.77,8.16Zm-2.2.75c-2.5,1.42-6,3.41-9.76,5.47l-.41.23L21.07,27.28l-1.47,1.34L18.5,17.32,17.17,18C10,22,7.61,23.16,6.79,23.52l-4.3-3.41,5.08.22,18-13.06a2.51,2.51,0,0,1,2-.45l5.85,1.26a.43.43,0,0,1,.35.37A.42.42,0,0,1,33.57,8.91Z">
+                                <div class="ps-4">
+                                    <div class="position-relative pessanger">
+                                        <div class=""><span><svg style="width: 24px; fill: #000; margin-left: -4px;"
+                                                    class="orbit-icon inline-block shrink-0 fill-current align-middle size-icon-medium"
+                                                    viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M9.057 5.33a4.162 4.162 0 1 1 4.373 6.85 6.958 6.958 0 0 1 5.527 6.81.9.9 0 0 1-1.8 0 5.158 5.158 0 1 0-10.315 0 .9.9 0 0 1-1.8 0 6.958 6.958 0 0 1 5.527-6.81 4.16 4.16 0 0 1-2.731-3.908c0-1.104.438-2.162 1.219-2.943ZM12 5.91a2.362 2.362 0 1 0 0 4.724 2.362 2.362 0 0 0 0-4.724Z">
                                                     </path>
-                                                    <path class="clr-i-outline clr-i-outline-path-2"
-                                                        d="M7,12.54l3.56,1,1.64-1.19-4-1.16L10,10.09l5.47-.16,2.3-1.67L10,8.5a1.25,1.25,0,0,0-.7.17L6.67,10.2A1.28,1.28,0,0,0,7,12.54Z">
+                                                </svg><span id="totalPessanger">7 </span><span> Passengers</span></span><span
+                                                class="ms-3"><i class="fa-solid fa-chevron-down"></i></span></div>
+                                        <div class="pessangerSelect position-absolute rounded my-shadow p-2"
+                                            style="display: none;">
+                                            <h4 style="font-size: 18px;">Passengers</h4>
+                                            <div class="row mx-0">
+
+                                                <!-- ADULT -->
+                                                <div class="col px-1 mb-3">
+                                                    <div class="adultSelect p-1 bg-white">
+                                                        <div class="d-flex align-items-center justify-content-between rounded"
+                                                            style="width:220px;">
+
+                                                            <!-- Left -->
+                                                            <div class="">
+                                                                <label class="m-0 d-flex align-items-center gap-2">
+                                                                    <div><svg style="width: 24px;"
+                                                                            class="orbit-icon inline-block shrink-0 fill-current align-middle size-icon-medium"
+                                                                            viewBox="0 0 24 24"
+                                                                            preserveAspectRatio="xMidYMid meet"
+                                                                            aria-hidden="true">
+                                                                            <path
+                                                                                d="M9.057 5.33a4.162 4.162 0 1 1 4.373 6.85 6.958 6.958 0 0 1 5.527 6.81.9.9 0 0 1-1.8 0 5.158 5.158 0 1 0-10.315 0 .9.9 0 0 1-1.8 0 6.958 6.958 0 0 1 5.527-6.81 4.16 4.16 0 0 1-2.731-3.908c0-1.104.438-2.162 1.219-2.943ZM12 5.91a2.362 2.362 0 1 0 0 4.724 2.362 2.362 0 0 0 0-4.724Z">
+                                                                            </path>
+                                                                        </svg></div>
+                                                                    <div>
+                                                                        <p class="mb-0 font-600">Adult</p>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+
+                                                            <!-- Right -->
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <button type="button" id="adultMinus"
+                                                                    class="btn passengerBtn btn-light d-flex align-items-center justify-content-center">-</button>
+
+                                                                <span id="adultCount"
+                                                                    style="width: 16px; text-align: center;">1</span>
+
+                                                                <button type="button" id="adultPlus"
+                                                                    class="btn passengerBtn btn-light d-flex align-items-center justify-content-center">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- CHILD -->
+                                                <div class="col px-1 mb-3">
+                                                    <div class="childSelect p-1 bg-white">
+                                                        <div class="d-flex align-items-center justify-content-between rounded"
+                                                            style="width:220px;">
+
+                                                            <!-- Left -->
+                                                            <div class="">
+                                                                <label class="m-0 d-flex align-items-center gap-2">
+                                                                    <div><svg style="width: 24px;"
+                                                                            class="orbit-icon inline-block shrink-0 fill-current align-middle size-icon-medium"
+                                                                            viewBox="0 0 24 24"
+                                                                            preserveAspectRatio="xMidYMid meet"
+                                                                            aria-hidden="true">
+                                                                            <path
+                                                                                d="M9.916 11.99a1.042 1.042 0 1 0-2.083.001 1.042 1.042 0 0 0 2.083 0ZM16.166 11.99a1.042 1.042 0 1 0-2.083.001 1.042 1.042 0 0 0 2.083 0ZM10.466 15.192a2.514 2.514 0 0 0 3.068 0 .832.832 0 1 1 1.098 1.25 4.084 4.084 0 0 1-5.265 0 .833.833 0 0 1 1.098-1.25Z">
+                                                                            </path>
+                                                                            <path
+                                                                                d="M19.916 10.717v-.114a8.103 8.103 0 0 0-7.374-8.175 7.925 7.925 0 0 0-8.459 7.896v.257a.436.436 0 0 1-.222.357 2.917 2.917 0 0 0 .658 5.607c.07.009.13.054.157.12a7.918 7.918 0 0 0 14.648 0 .195.195 0 0 1 .157-.12 2.917 2.917 0 0 0 .574-5.638.202.202 0 0 1-.139-.19Zm-.833 4.19h-.312c-.4 0-.745.284-.82.677a4.304 4.304 0 0 1-1.51 2.75C12.175 21.521 7.26 19.51 6.026 15.5a.833.833 0 0 0-.797-.588h-.312a1.25 1.25 0 1 1 .018-2.5.823.823 0 0 0 .816-.828v-1.26a6.249 6.249 0 0 1 6.113-6.242.177.177 0 0 0 .018.008c.432.092.81.353 1.048.726a1.405 1.405 0 0 1-.28 1.988c-.463.291-1.073.181-1.406-.255a.834.834 0 1 0-1.5.727 2.812 2.812 0 0 0 2.281 1.381 2.9 2.9 0 0 0 2.763-2.237c.091-.427.095-.869.012-1.297a.21.21 0 0 1 .307-.213 6.241 6.241 0 0 1 3.144 5.413v1.25a.823.823 0 0 0 .811.833h.005a1.249 1.249 0 1 1 .017 2.5Z">
+                                                                            </path>
+                                                                        </svg></div>
+                                                                    <div class="font-600"> Children</div>
+                                                                </label>
+                                                            </div>
+
+                                                            <!-- Right -->
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <button type="button" id="childMinus"
+                                                                    class="btn passengerBtn btn-light d-flex align-items-center justify-content-center">-</button>
+
+                                                                <span id="childCount"
+                                                                    style="width: 16px; text-align: center;">0</span>
+
+                                                                <button type="button" id="childPlus"
+                                                                    class="btn passengerBtn btn-light d-flex align-items-center justify-content-center">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- INFANT -->
+                                                <div class="col px-1 mb-3">
+                                                    <div class="infantSelect p-1 bg-white">
+                                                        <div class="d-flex align-items-center justify-content-between rounded mt-2"
+                                                            style="width:220px;">
+
+                                                            <!-- Left -->
+                                                            <div class="">
+
+                                                                <label class="m-0 d-flex align-items-center gap-2">
+                                                                    <div><svg style="width: 24px;"
+                                                                            class="orbit-icon inline-block shrink-0 fill-current align-middle size-icon-medium"
+                                                                            viewBox="0 0 24 24"
+                                                                            preserveAspectRatio="xMidYMid meet"
+                                                                            aria-hidden="true">
+                                                                            <path
+                                                                                d="M9.192 12.041a1.104 1.104 0 1 1 0-2.208 1.104 1.104 0 0 1 0 2.208ZM13.464 10.937a1.104 1.104 0 1 1 2.21 0 1.104 1.104 0 0 1-2.21 0ZM11.875 15.27c1.105 0 1.975-.487 1.975-1.591 0-1.105-.895-1.122-2-1.122s-2 .017-2 1.122c0 1.104.92 1.592 2.025 1.592Z">
+                                                                            </path>
+                                                                            <path
+                                                                                d="M19.81 7.34a2.61 2.61 0 0 1 1.323.602c.396.349.867 1.01.867 2.181 0 .948-.404 1.53-.742 1.85-.456.432-1.02.62-1.467.701a.45.45 0 0 0-.28.247c-1.661 3.215-4.204 5.301-7.652 6.282l-.064.017-.066.019c-3.247-1.074-5.65-3.123-7.23-6.148-.086-.166-.212-.269-.36-.278-.885-.163-1.813-.722-2.064-1.96-.242-1.189.147-1.976.516-2.428.454-.555 1.072-.855 1.64-.982.418-1.048 1.524-3.294 3.636-4.395 1.509-.787 3.022-1.168 4.497-1.137h.006a.673.673 0 0 0 .055-.001c.398.011.797.054 1.186.126 3.063.567 5.425 3.02 6.198 5.303Zm-.673 3.621c.152.007.654-.033.906-.277.08-.076.186-.218.186-.56 0-.406-.088-.692-.26-.848-.264-.239-.723-.204-.742-.203a.896.896 0 0 1-.97-.706c-.25-1.255-1.492-3.166-3.5-4.114.028.295.018.63-.06 1.01-.32 1.562-1.54 2.073-2.503 2.073-.16 0-.314-.015-.454-.04a.886.886 0 0 1 .31-1.744c.502.076.808-.14.912-.644.074-.365.046-.65-.085-.846-.147-.222-.427-.339-.576-.381-1.166-.017-2.383.294-3.616.937-2.08 1.084-2.95 3.865-2.96 3.893a.888.888 0 0 1-.847.628c-.28 0-.687.128-.916.407-.186.228-.236.54-.152.954.131.647.852.61 1.07.583a.892.892 0 0 1 .995.766c.324 2.543 2.754 3.743 2.779 3.755a.908.908 0 0 1 .107.06c1.471.983 3.392.908 3.412.907.021-.001.045-.002.066-.001h.004c.097-.001 1.812-.024 3.52-1.319 2.088-1.583 2.449-3.525 2.452-3.545a.883.883 0 0 1 .922-.745Z">
+                                                                            </path>
+                                                                            <path
+                                                                                d="M4.06 14.35c-.142 4.728 2.321 7.745 7.94 7.745 1.938 0 3.502-.36 4.718-.993-5.873-.258-10.111-2.51-12.659-6.751Z">
+                                                                            </path>
+                                                                            <path
+                                                                                d="M18.107 20.125c1.552-1.45 2.14-3.584 1.893-5.996l-.002-.02c-1.547 2.638-3.721 4.508-6.508 5.6 1.373.285 2.874.424 4.504.417H18.107Z">
+                                                                            </path>
+                                                                        </svg></div>
+                                                                    <div class="font-600"> Infant</div>
+                                                                </label>
+                                                            </div>
+
+                                                            <!-- Right -->
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <button type="button" id="infantMinus"
+                                                                    class="btn passengerBtn btn-light d-flex align-items-center justify-content-center">-</button>
+
+                                                                <span id="infantCount"
+                                                                    style="width: 16px; text-align: center;">0</span>
+
+                                                                <button type="button" id="infantPlus"
+                                                                    class="btn passengerBtn btn-light d-flex align-items-center justify-content-center">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Buttons -->
+                                            <div class="mt-1">
+                                                    <button type="button" class="btn w-100 myBtn btn-info py-1"
+                                                    id="pessangerClose">Done</button>
+                                            </div>
+                                        </div>
+
+                                        <!-- <script>
+                                            // Reusable function for each counter
+                                            function setupCounter(min, max, minusBtnId, plusBtnId, valueId) {
+
+                                                const minusBtn = document.getElementById(minusBtnId);
+                                                const plusBtn = document.getElementById(plusBtnId);
+                                                const valueBox = document.getElementById(valueId);
+
+                                                function updateButtons() {
+                                                    const value = parseInt(valueBox.textContent);
+
+                                                    minusBtn.disabled = (value <= min);
+                                                    plusBtn.disabled = (value >= max);
+                                                }
+
+                                                minusBtn.addEventListener("click", () => {
+                                                    let value = parseInt(valueBox.textContent);
+                                                    if (value > min) {
+                                                        valueBox.textContent = value - 1;
+                                                    }
+                                                    updateButtons();
+                                                });
+
+                                                plusBtn.addEventListener("click", () => {
+                                                    let value = parseInt(valueBox.textContent);
+                                                    if (value < max) {
+                                                        valueBox.textContent = value + 1;
+                                                    }
+                                                    updateButtons();
+                                                });
+
+                                                updateButtons();
+                                            }
+
+                                            // Adult: min=1, max=7
+                                            setupCounter(1, 7, "adultMinus", "adultPlus", "adultCount");
+
+                                            // Child: min=0, max=7
+                                            setupCounter(0, 7, "childMinus", "childPlus", "childCount");
+
+                                            // Infant: min=0, max=7
+                                            setupCounter(0, 7, "infantMinus", "infantPlus", "infantCount");
+                                        </script> -->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mx-0 p-md-4 px-2">
+                                <div class="col-md-4 col-sm-6 px-1 mb-4">
+                                       <label for="departFrom" class="mb-2 d-md-block d-none font-600">Departing from
+                                    </label>
+                                    <div class="form-element border p-2 bg-white rounded-1 position-relative">
+                                        <div class="position-relative d-flex align-items-center">
+                                            <span class="input-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane-takeoff-icon">
+                                                    <path d="M2 22h20"></path>
+                                                    <path
+                                                        d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 6l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z">
                                                     </path>
-                                                    <rect x="0" y="0" width="36" height="36" fill-opacity="0">
-                                                    </rect>
-                                                </g>
-                                            </svg>
-                                        </span></button>
-                                </div>
-                            </div>
-                            <div class="col-12 d-flex mb-sm-0 mb-3 justify-content-between">
-                                <div class="trip text-white d-flex">
-                                    <div class="round me-3">
-                                        <input type="radio" name="trip" id="round" value="round">
-                                        <label for="round" class="ms-1">Round</label>
+                                                </svg>
+                                            </span>
+                                            <input type="text" class="form-control" id="departFrom" autocomplete="off"
+                                                placeholder="Country, city or airport">
+                                        </div>
+
+                                        <div id="departFromlocation"
+                                            class="selectLocation position-absolute w-100 p-2 bg-light rounded"
+                                            style="display: none;">
+                                            <ul class="list-unstyled border mb-0">
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="oneway">
-                                        <input type="radio" name="trip" id="oneway" value="oneway" checked>
-                                        <label for="oneway" class="ms-1">One Way</label>
+                                </div>
+                                <div class="col-md-4 col-sm-6 px-1 mb-4">
+                                     <label for="flyTo" class="mb-2 d-md-block d-none font-600">Travelling to
+                                    </label>
+                                    <div class="form-element border p-2 bg-white rounded-1 position-relative">
+                                        <div class="position-relative d-flex align-items-center">
+                                            <span class="input-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane-landing-icon swap-icon tw-shrink-0 tw-w-5 lg:tw-w-6 tw-text-text-white"
+                                                    data-v-403c373f="">
+                                                    <path d="M2 22h20"></path>
+                                                    <path
+                                                        d="M3.77 10.77 2 9l2-4.5 1.1.55c.55.28.9.84.9 1.45s.35 1.17.9 1.45L8 8.5l3-6 1.05.53a2 2 0 0 1 1.09 1.52l.72 5.4a2 2 0 0 0 1.09 1.52l4.4 2.2c.42.22.78.55 1.01.96l.6 1.03c.49.88-.06 1.98-1.06 2.1l-1.18.15c-.47.06-.95-.02-1.37-.24L4.29 11.15a2 2 0 0 1-.52-.38Z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <input type="text" class="form-control" id="flyTo" autocomplete="off"
+                                                placeholder="Country, city or airport">
+                                        </div>
+                                        <div id="flyTolocation"
+                                            class="selectLocation position-absolute w-100 p-2 bg-light rounded"
+                                            style="display: none;">
+                                            <ul class="list-unstyled border mb-0">
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                                <li class="bg-white border-bottom p-1">
+                                                    London
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-md-4 col-sm-6 px-1 mb-4">
+                                      <label for="flyTo" class="mb-2 d-md-block d-none font-600">Dates
+                                    </label>
+                                    <div class="form-element border p-2 bg-white rounded-1">
+                                        <div class="position-relative d-flex align-items-center">
+                                            <span class="input-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"
+                                                    class="dp__input_icon dp__input_icons" role="img"
+                                                    aria-label="Calendar icon">
+                                                    <path
+                                                        d="M29.333 8c0-2.208-1.792-4-4-4h-18.667c-2.208 0-4 1.792-4 4v18.667c0 2.208 1.792 4 4 4h18.667c2.208 0 4-1.792 4-4v-18.667zM26.667 8v18.667c0 0.736-0.597 1.333-1.333 1.333 0 0-18.667 0-18.667 0-0.736 0-1.333-0.597-1.333-1.333 0 0 0-18.667 0-18.667 0-0.736 0.597-1.333 1.333-1.333 0 0 18.667 0 18.667 0 0.736 0 1.333 0.597 1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M20 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M9.333 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M4 14.667h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <div class="row mx-0 flex-nowrap">
+                                                <div class="col px-1">
+                                                    <input type="text" id="departDate" onfocus="(this.type='date')"
+                                                        onblur="(this.type='text')" class="form-control"
+                                                        placeholder="Depart date">
+                                                </div>
+                                                <div class="col px-1" id="returnDateContainer" style="display: block;">
+                                                    <input type="text" id="returnDate" onfocus="(this.type='date')"
+                                                        onblur="(this.type='text')" class="form-control"
+                                                        placeholder="Return date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 px-1 mb-4">
+                                      <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your name
+                                    </label>
+                                    <div class="form-element border p-2 bg-white rounded-1">
+                                        <div class="position-relative d-flex align-items-center">
+                                            <span class="input-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"
+                                                    class="dp__input_icon dp__input_icons" role="img"
+                                                    aria-label="Calendar icon">
+                                                    <path
+                                                        d="M29.333 8c0-2.208-1.792-4-4-4h-18.667c-2.208 0-4 1.792-4 4v18.667c0 2.208 1.792 4 4 4h18.667c2.208 0 4-1.792 4-4v-18.667zM26.667 8v18.667c0 0.736-0.597 1.333-1.333 1.333 0 0-18.667 0-18.667 0-0.736 0-1.333-0.597-1.333-1.333 0 0 0-18.667 0-18.667 0-0.736 0.597-1.333 1.333-1.333 0 0 18.667 0 18.667 0 0.736 0 1.333 0.597 1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M20 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M9.333 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M4 14.667h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Your name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 px-1 mb-4">
+                                      <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your phone
+                                    </label>
+                                    <div class="form-element border p-2 bg-white rounded-1">
+                                        <div class="position-relative d-flex align-items-center">
+                                            <span class="input-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"
+                                                    class="dp__input_icon dp__input_icons" role="img"
+                                                    aria-label="Calendar icon">
+                                                    <path
+                                                        d="M29.333 8c0-2.208-1.792-4-4-4h-18.667c-2.208 0-4 1.792-4 4v18.667c0 2.208 1.792 4 4 4h18.667c2.208 0 4-1.792 4-4v-18.667zM26.667 8v18.667c0 0.736-0.597 1.333-1.333 1.333 0 0-18.667 0-18.667 0-0.736 0-1.333-0.597-1.333-1.333 0 0 0-18.667 0-18.667 0-0.736 0.597-1.333 1.333-1.333 0 0 18.667 0 18.667 0 0.736 0 1.333 0.597 1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M20 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M9.333 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M4 14.667h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Your phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 px-1 mb-4">
+                                      <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your email
+                                    </label>
+                                    <div class="form-element border p-2 bg-white rounded-1">
+                                        <div class="position-relative d-flex align-items-center">
+                                            <span class="input-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"
+                                                    class="dp__input_icon dp__input_icons" role="img"
+                                                    aria-label="Calendar icon">
+                                                    <path
+                                                        d="M29.333 8c0-2.208-1.792-4-4-4h-18.667c-2.208 0-4 1.792-4 4v18.667c0 2.208 1.792 4 4 4h18.667c2.208 0 4-1.792 4-4v-18.667zM26.667 8v18.667c0 0.736-0.597 1.333-1.333 1.333 0 0-18.667 0-18.667 0-0.736 0-1.333-0.597-1.333-1.333 0 0 0-18.667 0-18.667 0-0.736 0.597-1.333 1.333-1.333 0 0 18.667 0 18.667 0 0.736 0 1.333 0.597 1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M20 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M9.333 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z">
+                                                    </path>
+                                                    <path
+                                                        d="M4 14.667h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <input type="email" class="form-control" placeholder="Your email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 offset-md-9">
+                                    <div
+                                        class="form-element d-flex justify-content-end align-items-center h-100">
+                                        <button type="button" class="btn btn-lg search-flight-btn">Show Flights
+                                            <span class="ms-1">
+                                                <svg fill="#ffffff" viewBox="0 0 36 36" width="35" height="35"
+                                                    version="1.1" preserveAspectRatio="xMidYMid meet"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff"
+                                                    stroke-width="0.00036">
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                    </g>
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <title>plane-line</title>
+                                                        <path class="clr-i-outline clr-i-outline-path-1"
+                                                            d="M35.77,8.16a2.43,2.43,0,0,0-1.9-2L28,4.87a4.5,4.5,0,0,0-3.65.79L7,18.3,2.14,18.1A1.86,1.86,0,0,0,.91,21.41l5,3.93c.6.73,1,.59,10.93-4.82l.93,9.42a1.36,1.36,0,0,0,.85,1.18,1.43,1.43,0,0,0,.54.1,1.54,1.54,0,0,0,1-.41l2.39-2.18a1.52,1.52,0,0,0,.46-.83L25.2,15.9c3.57-2,6.95-3.88,9.36-5.25A2.43,2.43,0,0,0,35.77,8.16Zm-2.2.75c-2.5,1.42-6,3.41-9.76,5.47l-.41.23L21.07,27.28l-1.47,1.34L18.5,17.32,17.17,18C10,22,7.61,23.16,6.79,23.52l-4.3-3.41,5.08.22,18-13.06a2.51,2.51,0,0,1,2-.45l5.85,1.26a.43.43,0,0,1,.35.37A.42.42,0,0,1,33.57,8.91Z">
+                                                        </path>
+                                                        <path class="clr-i-outline clr-i-outline-path-2"
+                                                            d="M7,12.54l3.56,1,1.64-1.19-4-1.16L10,10.09l5.47-.16,2.3-1.67L10,8.5a1.25,1.25,0,0,0-.7.17L6.67,10.2A1.28,1.28,0,0,0,7,12.54Z">
+                                                        </path>
+                                                        <rect x="0" y="0" width="36" height="36" fill-opacity="0">
+                                                        </rect>
+                                                    </g>
+                                                </svg>
+                                            </span></button>
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -331,7 +626,7 @@
                             <div class="popularCardInner">
                                 <div class="">
                                     <img src="https://www.kayak.com/rimg/dimg/4d/5a/a25ec4ac-city-33415-16510f7e605.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200"class="img-fluid rounded-5">
+                                        alt="" width="284" height="200" class="img-fluid rounded-5">
                                 </div>
                                 <div class="destName p-3 d-flex justify-content-between align-items-center">
                                     <div>
@@ -358,7 +653,7 @@
                             <div class="popularCardInner">
                                 <div class="">
                                     <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200"class="img-fluid rounded-5">
+                                        alt="" width="284" height="200" class="img-fluid rounded-5">
                                 </div>
                                 <div class="destName p-3 d-flex justify-content-between align-items-center">
                                     <div>
@@ -385,7 +680,7 @@
                             <div class="popularCardInner">
                                 <div class="">
                                     <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200"class="img-fluid rounded-5">
+                                        alt="" width="284" height="200" class="img-fluid rounded-5">
                                 </div>
                                 <div class="destName p-3 d-flex justify-content-between align-items-center">
                                     <div>
@@ -412,7 +707,7 @@
                             <div class="popularCardInner">
                                 <div class="">
                                     <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200"class="img-fluid rounded-5">
+                                        alt="" width="284" height="200" class="img-fluid rounded-5">
                                 </div>
                                 <div class="destName p-3 d-flex justify-content-between align-items-center">
                                     <div>
@@ -439,7 +734,7 @@
                             <div class="popularCardInner">
                                 <div class="">
                                     <img src="https://www.kayak.com/rimg/dimg/4d/5a/a25ec4ac-city-33415-16510f7e605.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200"class="img-fluid rounded-5">
+                                        alt="" width="284" height="200" class="img-fluid rounded-5">
                                 </div>
                                 <div class="destName p-3 d-flex justify-content-between align-items-center">
                                     <div>
@@ -466,7 +761,7 @@
                             <div class="popularCardInner">
                                 <div class="">
                                     <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200"class="img-fluid rounded-5">
+                                        alt="" width="284" height="200" class="img-fluid rounded-5">
                                 </div>
                                 <div class="destName p-3 d-flex justify-content-between align-items-center">
                                     <div>
@@ -493,7 +788,7 @@
                             <div class="popularCardInner">
                                 <div class="">
                                     <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200"class="img-fluid rounded-5">
+                                        alt="" width="284" height="200" class="img-fluid rounded-5">
                                 </div>
                                 <div class="destName p-3 d-flex justify-content-between align-items-center">
                                     <div>
@@ -520,7 +815,7 @@
                             <div class="popularCardInner">
                                 <div class="">
                                     <img src="https://www.kayak.com/rimg/dimg/4d/5a/a25ec4ac-city-33415-16510f7e605.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200"class="img-fluid rounded-5">
+                                        alt="" width="284" height="200" class="img-fluid rounded-5">
                                 </div>
                                 <div class="destName p-3 d-flex justify-content-between align-items-center">
                                     <div>
@@ -689,7 +984,10 @@
                 <div class="testimoniaSlider-card mx-2 position-relative">
                     <div class="testimonialSlider-card-inner p-3 bg-white rounded-3">
                         <span class="qoutIcon position-absolute">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+                            </svg>
                         </span>
                         <div class="h-100">
                             <p class="testiText">
@@ -708,10 +1006,10 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
+                                </div>
                                 <button type="button" class="search-flight-btn profileBtn">
                                     <span class="me-1"><i class="fa-solid fa-link"></i></span>Visit Profile
-                                    </button>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -719,7 +1017,10 @@
                 <div class="testimoniaSlider-card mx-2 position-relative">
                     <div class="testimonialSlider-card-inner p-3 bg-white rounded-3">
                         <span class="qoutIcon position-absolute">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+                            </svg>
                         </span>
                         <div class="h-100">
                             <p class="testiText">
@@ -737,10 +1038,10 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
+                                </div>
                                 <button type="button" class="search-flight-btn profileBtn">
                                     <span class="me-1"><i class="fa-solid fa-link"></i></span>Visit Profile
-                                    </button>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -748,7 +1049,10 @@
                 <div class="testimoniaSlider-card mx-2 position-relative">
                     <div class="testimonialSlider-card-inner p-3 bg-white rounded-3">
                         <span class="qoutIcon position-absolute">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+                            </svg>
                         </span>
                         <div class="h-100">
                             <p class="testiText">
@@ -765,10 +1069,10 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
+                                </div>
                                 <button type="button" class="search-flight-btn profileBtn">
                                     <span class="me-1"><i class="fa-solid fa-link"></i></span>Visit Profile
-                                    </button>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -802,10 +1106,10 @@
                                     plan your next holiday tour.
                                 </p>
                                 <div class="text-center">
-                                <a href="" role="btn" class="btn-link text-decoration-none text-dark">READ MORE</a>
+                                    <a href="" role="btn" class="btn-link text-decoration-none text-dark">READ MORE</a>
+                                </div>
                             </div>
-                            </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -824,10 +1128,10 @@
                                     plan your next holiday tour.
                                 </p>
                                 <div class="text-center">
-                                <a href="" role="btn" class="btn-link text-decoration-none text-dark">READ MORE</a>
+                                    <a href="" role="btn" class="btn-link text-decoration-none text-dark">READ MORE</a>
+                                </div>
                             </div>
-                            </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -846,10 +1150,10 @@
                                     plan your next holiday tour.
                                 </p>
                                 <div class="text-center">
-                                <a href="" role="btn" class="btn-link text-decoration-none text-dark">READ MORE</a>
+                                    <a href="" role="btn" class="btn-link text-decoration-none text-dark">READ MORE</a>
+                                </div>
                             </div>
-                            </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -868,15 +1172,16 @@
                                     plan your next holiday tour.
                                 </p>
                                 <div class="text-center">
-                                <a href="" role="btn" class="btn-link text-decoration-none text-dark">READ MORE</a>
+                                    <a href="" role="btn" class="btn-link text-decoration-none text-dark">READ MORE</a>
+                                </div>
                             </div>
-                            </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5"><a href="" role="button" class="learMorebtn d-inline-block">LEARN MORE</a></div>
+            <div class="text-center mt-5"><a href="" role="button" class="learMorebtn d-inline-block">LEARN MORE</a>
+            </div>
         </div>
     </div>
     <footer class="pt-4 position-relative">
@@ -978,7 +1283,8 @@
             </div>
         </div>
         <div class="whatsAppChat position-fixed">
-            <a href="https://api.whatsapp.com/send/?phone=02088995566&text=Deal+in+all+kind+of+Travel+Services.&type=phone_number&app_absent=0" target="_blank"><img src="front/images/65f416f151f8e.gif" alt="" class="img-fluid"></a>
+            <a href="https://api.whatsapp.com/send/?phone=02088995566&text=Deal+in+all+kind+of+Travel+Services.&type=phone_number&app_absent=0"
+                target="_blank"><img src="front/images/65f416f151f8e.gif" alt="" class="img-fluid"></a>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="front/owlcarousel/owl.carousel.min.js"></script>

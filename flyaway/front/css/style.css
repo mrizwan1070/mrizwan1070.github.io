@@ -4,28 +4,55 @@ body {
     background-color: #f4f7f9;
     font-weight: 300;
 }
-:root{
-    --primaryColor: rgb(105, 12, 54);
-    --primaryHover: rgb(78, 9, 40);
-    --btnGradient: linear-gradient(135deg, rgb(105, 12, 54) 20%, rgb(213, 23 ,109));
-    --btnGradientHover: linear-gradient(135deg, rgb(213, 23 ,109)20%, rgb(105, 12, 54));
+
+:root {
+    --primaryColor: rgba(0, 143, 123, 1);
+    --primaryHover: rgba(0, 117, 101, 1);
+    --btnGradient: linear-gradient(135deg, rgba(0, 143, 123, 0.4) 0%, rgba(0, 143, 123, 1) 100%);
+    --btnGradientHover: linear-gradient(135deg, rgb(213, 23, 109)20%, rgb(105, 12, 54));
+    --primaryBtn: rgb(30,144,255);
 }
+
 a {
     text-decoration: none;
-    color: var(--primaryColor)
 }
-a:hover{
-    color: #000;
+
+a:hover {
+    color: var(--primaryHover)
 }
-header{
-    background-color: var(--primaryColor);
+
+.nav-link:hover {
+    color: var(--primaryHover);
 }
-.site-logo{
-    width: 120px;
+
+header {
+    /* background-color: var(--primaryColor); */
 }
-.flight-searchForm{
-    background-color: var(--primaryColor);
+
+.site-logo {
+    width: 210px;
 }
+
+.header-img {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+    object-position: bottom;
+}
+
+.nav-link {
+    color: #373a42;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: var(--primaryHover) !important;
+}
+
+.flight-searchForm {
+    background-color: #fff
+}
+
 .form-element input,
 .form-element select {
     border: none;
@@ -38,11 +65,57 @@ header{
     border: none !important;
     box-shadow: none;
 }
+.pessanger{
+    padding: 8px 0;
+}
+.pessangerSelect {
+    top: -0.1rem;
+    z-index: 1;
+    background-color: #fff;
+    width: 250px;
+}
 
-.pessangerSelect,
+.passengerBtn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
 .selectLocation {
     left: .3rem;
     z-index: 1;
+}
+
+.dropdown-radio {
+    position: relative;
+}
+
+/* .dropdown-radio-summary {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 5px;
+} */
+
+.dropdown-radio-content {
+    position: absolute;
+    top: -0.1rem;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    padding: 10px;
+    display: none;
+    z-index: 20;
+}
+
+.dropdown-radio.open .dropdown-radio-content {
+    display: block;
+}
+
+.dropdown-radio-content label {
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .selectLocation ul li:hover {
@@ -54,21 +127,33 @@ header{
     height: 1rem;
     vertical-align: middle;
 }
-#carouselHomeHead .carousel-item{
+
+#carouselHomeHead .carousel-item {
     height: 450px;
 }
- .carousel-item img{
+
+.carousel-item img {
     object-position: right;
- }
-.flightSearch{
+}
+
+.flightSearch {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
     width: 100%;
 }
+.myBtn{
+    background-color: var(--primaryBtn);
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.myBtn:hover{
+     background: rgb(27, 132, 236);
+    color: #fff;
+}
 .search-flight-btn {
-    background: var(--btnGradient);
+    background: var(--primaryBtn);
     border: none;
     color: #fff;
     padding: 8px 30px;
@@ -81,25 +166,31 @@ header{
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
 .search-flight-btn:hover {
-    background: var(--btnGradientHover);
+    background: rgb(27, 132, 236);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
     color: #fff;
 }
+
 .search-flight-btn svg {
     transition: all 0.3s ease;
 }
+
 .search-flight-btn:hover svg {
     transform: translateX(5px);
 }
-.popularDestCard{
+
+.popularDestCard {
     scale: 1;
     transition: all 0.5s linear;
 }
-.popularDestCard:hover{
+
+.popularDestCard:hover {
     scale: 1.06;
 }
+
 .sortBtn {
     flex: 0 0 33.33%;
     text-align: left;
@@ -122,9 +213,11 @@ header{
 .sortBtn:last-child.active {
     border-end-end-radius: .5rem;
 }
-.dividor{
+
+.dividor {
     color: #9b9b9b;
 }
+
 .flightCard hr {
     height: 2px;
     width: 100%;
@@ -345,27 +438,34 @@ input[type="checkbox"]~.checkmark {
     transform: translate(-50%, -50%);
     background-color: #0072c8;
 }
-footer{
+
+footer {
     background-color: #fff;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
-.footLogo{
+
+.footLogo {
     width: 160px;
 }
+
 .f-lg {
     font-size: 1.5rem;
     font-weight: 500;
 }
-.socialIcon{
+
+.socialIcon {
     color: var(--primaryColor);
     font-size: 1.5rem;
 }
-.disc{
+
+.disc {
     background-color: var(--primaryColor);
 }
-.topAirlines{
+
+.topAirlines {
     padding: 3rem 0;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -374,59 +474,75 @@ footer{
     height: 100%;
     background: rgb(0, 0, 0, .4);
 }
-.owl-carousel .owl-stage{display: flex;}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
 .testimoniaSlider-card {
     display: flex;
     flex: 1 0 auto;
     height: 100%;
 }
-p.testiText{
+
+p.testiText {
     margin-top: 30px;
 }
-.qoutIcon{
+
+.qoutIcon {
     width: 30px;
     top: 7px;
     left: 1rem;
 }
-.qoutIcon svg path{
+
+.qoutIcon svg path {
     fill: #373a42;
 }
-.testimonialSlider-card-inner > div{
+
+.testimonialSlider-card-inner>div {
     position: relative;
     overflow: hidden;
-    /* margin-bottom: 80px; *//*This is optional*/
+    /* margin-bottom: 80px; */
+    /*This is optional*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .star-rating {
     margin-bottom: 10px;
     font-size: 18px;
     color: #f39c12;
 }
-.profileBtn:hover{
+
+.profileBtn:hover {
     box-shadow: none;
 }
-.blogs{
+
+.blogs {
     background-color: #000;
     color: #fff;
 }
+
 .blog-card {
     background: white;
     color: #000;
 }
-.blog-summery{
+
+.blog-summery {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     line-clamp: 2;
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
+
 a.learMorebtn {
     color: #fff;
     border: 1px solid #fff;
     padding: 9px 15px;
 }
+
 .whatsAppChat {
     width: 75px;
     height: 75px;
@@ -437,6 +553,7 @@ a.learMorebtn {
     padding: 8px;
     z-index: 1;
 }
+
 @media screen and (max-width: 768px) {
     .sortBtn {
         padding: .5rem 1rem;
@@ -461,4 +578,28 @@ a.learMorebtn {
     .f-lg {
         font-size: 1.1rem;
     }
+}
+.font-600{
+    font-weight: 600 !important;
+}
+.trip-buttons {
+    display: flex;
+    gap: 35px;
+}
+
+.trip-buttons input[type="radio"] {
+    display: none; /* hide circles */
+}
+
+.trip-btn {
+    padding: 8px 0;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: 0.25s;
+}
+
+.trip-buttons input[type="radio"]:checked + .trip-btn {
+    font-weight: 600;
+    border-bottom: 3px solid #007bff; /* bold underline */
+    color: #007bff;
 }

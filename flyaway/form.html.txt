@@ -1,0 +1,213 @@
+ <div class="flightSearch position-absolute">
+            <div class="container-lg">
+                <div>
+                    <h1 class="text-white mb-3">Low Fares, Guaranteed!</h1>
+                <div class="flight-searchForm p-md-4 p-2 rounded">
+                    <!-- <p class="text-white fw-bold">
+                        Find Cheap Flights World Wide</p> -->
+                    <form action="" class="mb-0">
+                        <div class="row mx-0">
+                            <div class="col-md-3 col-sm-6 px-1 mb-3">
+                                <div class="form-element py-md-2 p-0 bg-white rounded-1 position-relative">
+                                    <label for="" class="text-center fw-bold d-md-block d-none">FLYING FROM
+                                    </label>
+                                    <input type="text" class="form-control text-center" id="departFrom"
+                                        autocomplete="off" placeholder="Depart From">
+                                    <div id="departFromlocation"
+                                        class="selectLocation position-absolute w-100 p-2 bg-light rounded"
+                                        style="display: none;">
+                                        <ul class="list-unstyled border mb-0">
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 px-1 mb-3">
+                                <div class="form-element py-md-2 p-0 bg-white rounded-1 position-relative">
+                                    <label for="" class="text-center fw-bold d-md-block d-none">FLYING TO
+                                    </label>
+                                    <input type="text" class="form-control text-center" id="flyTo" autocomplete="off"
+                                        placeholder="Destination">
+                                    <div id="flyTolocation"
+                                        class="selectLocation position-absolute w-100 p-2 bg-light rounded"
+                                        style="display: none;">
+                                        <ul class="list-unstyled border mb-0">
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                            <li class="bg-white border-bottom p-1">
+                                                London
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 px-1 mb-3">
+                                <div class="form-element py-md-2 p-0 bg-white rounded-1">
+                                    <label for="" class="text-center fw-bold d-md-block d-none">DATES
+                                    </label>
+                                    <div class="row mx-0 flex-nowrap">
+                                        <div class="col px-1">
+                                            <input type="text" id="departDate" onfocus="(this.type='date')"
+                                                onblur="(this.type='text')" class="form-control text-center"
+                                                placeholder="Depart date">
+                                        </div>
+                                        <div class="col px-1" id="returnDateContainer" style="display: block;">
+                                            <input type="text" id="returnDate" onfocus="(this.type='date')"
+                                                onblur="(this.type='text')" class="form-control text-center"
+                                                placeholder="Return date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 px-1 mb-3">
+                                <div class="form-element py-md-2 p-0 bg-white rounded-1 position-relative pessanger">
+                                    <label for="" class="text-center fw-bold d-md-block d-none">PASSENGERS</label>
+                                    <input type="text" value="1 Adult" readonly class="form-control text-center"
+                                        id="totalPessanger">
+                                    <div class="pessangerSelect bg-light position-absolute w-100 p-2"
+                                        style="display: none;">
+                                        <div class="row mx-0">
+                                            <div class="col px-1">
+                                                <div class="adultSelect border p-1 bg-white">
+                                                    <label for="selectAdult" id="adultLabel">Adult</label>
+                                                    <select name="selectAdult" id="selectAdult"
+                                                        class="form-select lh-1 p-0">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col px-1">
+                                                <div class="childSelect border p-1 bg-white">
+                                                    <label for="">Child</label>
+                                                    <select name="" id="selectChild" class="form-select lh-1 p-0">
+                                                        <option value="0" selected>0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col px-1">
+                                                <div class="infantSelect border p-1 bg-white">
+                                                    <label for="">Infant</label>
+                                                    <select name="" id="selectInfant" class="form-select lh-1 p-0">
+                                                        <option value="0" selected>0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end mt-1">
+                                            <button type="button" class="btn btn-info me-1 py-1"
+                                                id="setPessanger">Submit</button>
+                                            <button type="button" class="btn btn-info py-1"
+                                                id="pessangerClose">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 px-1 mb-3">
+                                <div class="form-element py-md-2 p-0 bg-white rounded-1">
+                                    <label for="" class="text-center fw-bold d-md-block d-none">NAME
+                                    </label>
+                                    <input type="text" class="form-control text-center" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 px-1 mb-3">
+                                <div class="form-element py-md-2 p-0 bg-white rounded-1">
+                                    <label for="" class="text-center fw-bold d-md-block d-none">PHONE
+                                    </label>
+                                    <input type="text" class="form-control text-center" placeholder="Your phone">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 px-1 mb-3">
+                                <div class="form-element py-md-2 p-0 bg-white rounded-1">
+                                    <label for="" class="text-center fw-bold d-md-block d-none">EMAIL
+                                    </label>
+                                    <input type="email" class="form-control text-center" placeholder="Your email">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 order-sm-0 order-last">
+                                <div
+                                    class="form-element d-flex justify-content-center align-items-center h-100 pb-sm-3">
+                                    <button type="button" class="btn btn-lg btn-info search-flight-btn">Show Flights
+                                        <span class="ms-1">
+                                            <svg fill="#ffffff" viewBox="0 0 36 36" width="35" height="35" version="1.1"
+                                                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff"
+                                                stroke-width="0.00036">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                </g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <title>plane-line</title>
+                                                    <path class="clr-i-outline clr-i-outline-path-1"
+                                                        d="M35.77,8.16a2.43,2.43,0,0,0-1.9-2L28,4.87a4.5,4.5,0,0,0-3.65.79L7,18.3,2.14,18.1A1.86,1.86,0,0,0,.91,21.41l5,3.93c.6.73,1,.59,10.93-4.82l.93,9.42a1.36,1.36,0,0,0,.85,1.18,1.43,1.43,0,0,0,.54.1,1.54,1.54,0,0,0,1-.41l2.39-2.18a1.52,1.52,0,0,0,.46-.83L25.2,15.9c3.57-2,6.95-3.88,9.36-5.25A2.43,2.43,0,0,0,35.77,8.16Zm-2.2.75c-2.5,1.42-6,3.41-9.76,5.47l-.41.23L21.07,27.28l-1.47,1.34L18.5,17.32,17.17,18C10,22,7.61,23.16,6.79,23.52l-4.3-3.41,5.08.22,18-13.06a2.51,2.51,0,0,1,2-.45l5.85,1.26a.43.43,0,0,1,.35.37A.42.42,0,0,1,33.57,8.91Z">
+                                                    </path>
+                                                    <path class="clr-i-outline clr-i-outline-path-2"
+                                                        d="M7,12.54l3.56,1,1.64-1.19-4-1.16L10,10.09l5.47-.16,2.3-1.67L10,8.5a1.25,1.25,0,0,0-.7.17L6.67,10.2A1.28,1.28,0,0,0,7,12.54Z">
+                                                    </path>
+                                                    <rect x="0" y="0" width="36" height="36" fill-opacity="0">
+                                                    </rect>
+                                                </g>
+                                            </svg>
+                                        </span></button>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex mb-sm-0 mb-3 justify-content-between">
+                                <div class="trip text-white d-flex">
+                                    <div class="round me-3">
+                                        <input type="radio" name="trip" id="round" value="round">
+                                        <label for="round" class="ms-1">Round</label>
+                                    </div>
+                                    <div class="oneway">
+                                        <input type="radio" name="trip" id="oneway" value="oneway" checked>
+                                        <label for="oneway" class="ms-1">One Way</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
