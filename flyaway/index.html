@@ -5,6 +5,7 @@
     <title>FlyAwayWorld</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="front/images/favicon.png" type="image/x-icon">
@@ -28,7 +29,7 @@
     <header>
         <div class="container-lg">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.html"><img src="front/images/gcf-logo.png" alt=""
+                <a class="navbar-brand" href="index.html"><img src="./front/images/gcf-logo.png" alt=""
                         class="img-fluid site-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -69,38 +70,21 @@
         </div> -->
         <div>
             <!-- <img src="/flyaway/front/images/header.jpg" class="img-fluid header-img" alt=""> -->
-            <video src="/flyaway/front/images/header.mp4" id="videoPlayer" class="w-100" autoplay loop
+            <video src="./front/images/header.mp4" id="videoPlayer" class="w-100" autoplay loop
                 style="filter: brightness(0.5);"></video>
-            <script>
-                var video = document.getElementById("videoPlayer");
-                var startTime = 1; // Start the loop at 10 seconds
-                var endTime = 15;   // End the loop at 20 seconds (play for 10 seconds)
-
-                // Set the initial start time
-                video.currentTime = startTime;
-
-                video.addEventListener("timeupdate", function () {
-                    // If current time exceeds the end time, jump back to the start time
-                    if (video.currentTime >= endTime) {
-                        video.currentTime = startTime;
-                        video.play(); // Ensure it keeps playing after the jump
-                    }
-                });
-            </script>
-
         </div>
         <div class="flightSearch position-absolute">
             <div class="container-lg">
                 <div>
                     <div class="text-white text-center">
-                        <h1 style="font-size: 4.5rem;">Book flights early,<br>pay flexibly</h1>
-                        <p style="font-size: 1.5rem;">We'll save your seat, while you save the rest.</p>
+                        <h1 style="font-size:3.5rem;">Book flights early, pay flexibly</h1>
+                        <p style="font-size: 1.2rem;">We'll save your seat, while you save the rest.</p>
                     </div>
-                    <div class="flight-searchForm py-md-4 py-2 rounded">
+                    <div class="flight-searchForm rounded">
                         <!-- <p class="text-white fw-bold">
                         Find Cheap Flights World Wide</p> -->
                         <form action="" class="mb-0">
-                            <div class="d-flex mb-3 border-bottom px-md-4 px-2">
+                            <div class="d-flex mb-3 border-bottom px-4 pt-4">
                                 <div class="d-flex mb-sm-0 pe-4 justify-content-between border-end">
                                     <div class="trip d-flex">
 
@@ -136,8 +120,9 @@
                                                     <path
                                                         d="M9.057 5.33a4.162 4.162 0 1 1 4.373 6.85 6.958 6.958 0 0 1 5.527 6.81.9.9 0 0 1-1.8 0 5.158 5.158 0 1 0-10.315 0 .9.9 0 0 1-1.8 0 6.958 6.958 0 0 1 5.527-6.81 4.16 4.16 0 0 1-2.731-3.908c0-1.104.438-2.162 1.219-2.943ZM12 5.91a2.362 2.362 0 1 0 0 4.724 2.362 2.362 0 0 0 0-4.724Z">
                                                     </path>
-                                                </svg><span id="totalPessanger">7 </span><span> Passengers</span></span><span
-                                                class="ms-3"><i class="fa-solid fa-chevron-down"></i></span></div>
+                                                </svg><span id="totalPessanger">7 </span><span>
+                                                    Passengers</span></span><span class="ms-3"><i
+                                                    class="fa-solid fa-chevron-down"></i></span></div>
                                         <div class="pessangerSelect position-absolute rounded my-shadow p-2"
                                             style="display: none;">
                                             <h4 style="font-size: 18px;">Passengers</h4>
@@ -273,7 +258,7 @@
 
                                             <!-- Buttons -->
                                             <div class="mt-1">
-                                                    <button type="button" class="btn w-100 myBtn btn-info py-1"
+                                                <button type="button" class="btn w-100 myBtn btn-info py-1"
                                                     id="pessangerClose">Done</button>
                                             </div>
                                         </div>
@@ -326,9 +311,9 @@
                                 </div>
                             </div>
 
-                            <div class="row mx-0 p-md-4 px-2">
+                            <div class="row mx-0 p-4">
                                 <div class="col-md-4 col-sm-6 px-1 mb-4">
-                                       <label for="departFrom" class="mb-2 d-md-block d-none font-600">Departing from
+                                    <label for="departFrom" class="mb-2 d-md-block d-none font-600">Departing from
                                     </label>
                                     <div class="form-element border p-2 bg-white rounded-1 position-relative">
                                         <div class="position-relative d-flex align-items-center">
@@ -371,7 +356,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 px-1 mb-4">
-                                     <label for="flyTo" class="mb-2 d-md-block d-none font-600">Travelling to
+                                    <label for="flyTo" class="mb-2 d-md-block d-none font-600">Travelling to
                                     </label>
                                     <div class="form-element border p-2 bg-white rounded-1 position-relative">
                                         <div class="position-relative d-flex align-items-center">
@@ -414,7 +399,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 px-1 mb-4">
-                                      <label for="flyTo" class="mb-2 d-md-block d-none font-600">Dates
+                                    <label for="flyTo" class="mb-2 d-md-block d-none font-600">Dates
                                     </label>
                                     <div class="form-element border p-2 bg-white rounded-1">
                                         <div class="position-relative d-flex align-items-center">
@@ -453,7 +438,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 px-1 mb-4">
-                                      <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your name
+                                    <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your name
                                     </label>
                                     <div class="form-element border p-2 bg-white rounded-1">
                                         <div class="position-relative d-flex align-items-center">
@@ -481,7 +466,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 px-1 mb-4">
-                                      <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your phone
+                                    <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your phone
                                     </label>
                                     <div class="form-element border p-2 bg-white rounded-1">
                                         <div class="position-relative d-flex align-items-center">
@@ -509,7 +494,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 px-1 mb-4">
-                                      <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your email
+                                    <label for="flyTo" class="mb-2 d-md-block d-none font-600">Your email
                                     </label>
                                     <div class="form-element border p-2 bg-white rounded-1">
                                         <div class="position-relative d-flex align-items-center">
@@ -537,8 +522,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3 offset-md-9">
-                                    <div
-                                        class="form-element d-flex justify-content-end align-items-center h-100">
+                                    <div class="form-element d-flex justify-content-end align-items-center h-100">
                                         <button type="button" class="btn btn-lg search-flight-btn">Show Flights
                                             <span class="ms-1">
                                                 <svg fill="#ffffff" viewBox="0 0 36 36" width="35" height="35"
@@ -574,8 +558,54 @@
         </div>
     </div>
     <div class="container-lg">
-        <div class="ourValues mb-4">
-            <div class="row mx-0 justify-content-center">
+        <div class="ourValues my-5">
+            <div class="text-center">
+                <h2 class="ms-3 fw-bold" style="font-size: 3rem;">
+                    Flexible payments for unforgettable journeys
+                </h2>
+                <p style="font-size: 1.5rem;">Find flights for you and secure them with a small £50 deposit.</p>
+                <div>
+                    <div class="row mx-0 justify-content-center">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="text-center">
+                                <img src="./front/images/lock.webp" alt="" class="img-fluid">
+                                <h3>
+                                    Lock in Today's Flight Prices
+                                </h3>
+                                <p>
+                                    Wave goodbye to price hikes. Book flights now with just a deposit. Your seat is
+                                    secured and your budget protected.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="text-center">
+                                <img src="./front/images/payments.webp" alt="" class="img-fluid">
+                                <h3>
+                                    Flexible Payment Plans
+                                </h3>
+                                <p>
+                                    Shrink upfront costs by splitting the price of your airline ticket into small
+                                    slices. Payment plans that fit your pay cycle, without blowing your budget.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="text-center">
+                                <img src="./front/images/payfull.webp" alt="" class="img-fluid">
+                                <h3>
+                                    Pay in Full Before You Fly
+                                </h3>
+                                <p>
+                                    Own your flights outright before you take off. Travel stress-free with clear
+                                    horizons ahead.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row mx-0 justify-content-center">
                 <div class="col-md-4 col-sm-6">
                     <div class="px-4 text-center">
                         <img src="https://images.skypicker.com/?image=https%3A%2F%2Fimages.kiwi.com%2Fsearch%2Fusps%2Ftrust.png%3Fv2&width=320&height=216"
@@ -613,228 +643,122 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
-        <div class="popularDest my-5">
+        <!-- <div class="my-5">
+            <div class="text-center">
             <h2 class="mb-4 ms-3">
-                Popular destinations
+                Flexible payments for unforgettable journeys
+            </h2>
+            <p>Find flights for you and secure them with a small £50 deposit.</p>
+            </div>
+            <div class="row mx-0">
+            </div>
+        </div> -->
+        <div class="popularDest my-5">
+            <h2 class="mb-5 text-center" style="font-size: 3rem;">
+                Where Will You Go Next?
             </h2>
             <div class="row mx-0">
-                <div class="col-md-3 col-sm-6 mb-3">
+                <div class="col-md-4 col-sm-6 mb-3">
                     <a href="">
-                        <div class="popularDestCard shadow-lg rounded-5 p-2 pb-0">
+                        <div class="popularDestCard shadow-lg rounded-4 p-3">
                             <div class="popularCardInner">
-                                <div class="">
-                                    <img src="https://www.kayak.com/rimg/dimg/4d/5a/a25ec4ac-city-33415-16510f7e605.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200" class="img-fluid rounded-5">
-                                </div>
-                                <div class="destName p-3 d-flex justify-content-between align-items-center">
+                                <div class="destName px-3 py-2 d-flex justify-content-between align-items-center">
                                     <div>
                                         <h6 class="fw-bold">
-                                            Baku
+                                            Alicante, Spain
                                         </h6>
-                                        <div class="fromFare fw-bold">
-                                            <span>
-                                                from $499
-                                            </span>
-                                        </div>
                                     </div>
-                                    <span>
-                                        <i class="fa-classic fa-solid fa-chevron-right fa-fw"></i>
-                                    </span>
+                                </div>
+                                <div class="popImg">
+                                    <img src="./front/images/destinations/alicante-spain.webp" alt="" class="img-fluid rounded-4">
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-3">
+                <div class="col-md-4 col-sm-6 mb-3">
                     <a href="">
-                        <div class="popularDestCard shadow-lg rounded-5 p-2 pb-0">
+                        <div class="popularDestCard shadow-lg rounded-4 p-3">
                             <div class="popularCardInner">
-                                <div class="">
-                                    <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200" class="img-fluid rounded-5">
-                                </div>
-                                <div class="destName p-3 d-flex justify-content-between align-items-center">
+                                <div class="destName px-3 py-2 d-flex justify-content-between align-items-center">
                                     <div>
                                         <h6 class="fw-bold">
-                                            Karachi
+                                            Satorini, Greece
                                         </h6>
-                                        <div class="fromFare fw-bold">
-                                            <span>
-                                                from $299
-                                            </span>
-                                        </div>
                                     </div>
-                                    <span>
-                                        <i class="fa-classic fa-solid fa-chevron-right fa-fw"></i>
-                                    </span>
+                                </div>
+                            </div>
+                            <div class="popImg">
+                                <img src="./front/images/destinations/santorini-greece.webp" alt="" class="img-fluid rounded-4">
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="">
+                        <div class="popularDestCard shadow-lg rounded-4 p-3">
+                            <div class="popularCardInner">
+                                <div class="destName px-3 py-2 d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="fw-bold">
+                                            Barcelona, Spain
+                                        </h6>
+
+                                    </div>
+                                </div>
+                                <div class="popImg">
+                                    <img src="./front/images/destinations/barcelona-spain.webp" alt="" class="img-fluid rounded-4">
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <a href="">
-                        <div class="popularDestCard shadow-lg rounded-5 p-2 pb-0">
-                            <div class="popularCardInner">
-                                <div class="">
-                                    <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200" class="img-fluid rounded-5">
-                                </div>
-                                <div class="destName p-3 d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h6 class="fw-bold">
-                                            Karachi
-                                        </h6>
-                                        <div class="fromFare fw-bold">
-                                            <span>
-                                                from $299
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <span>
-                                        <i class="fa-classic fa-solid fa-chevron-right fa-fw"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+            </div>
+        </div>
+        <div class="book-early py-5">
+            <div class="row mx-0">
+                <div class="col-md-6">
+                    <div class="bookearlyImg">
+                        <img src="./front/images/bookearly.avif" alt="" class="img-fluid rounded-4">
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <a href="">
-                        <div class="popularDestCard shadow-lg rounded-5 p-2 pb-0">
-                            <div class="popularCardInner">
-                                <div class="">
-                                    <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200" class="img-fluid rounded-5">
-                                </div>
-                                <div class="destName p-3 d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h6 class="fw-bold">
-                                            Karachi
-                                        </h6>
-                                        <div class="fromFare fw-bold">
-                                            <span>
-                                                from $299
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <span>
-                                        <i class="fa-classic fa-solid fa-chevron-right fa-fw"></i>
-                                    </span>
-                                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-between flex-column h-100">
+                        <h3 class="fw-bold mt-4" style="font-size: 2.5rem;">
+                            Why book early with GalaxyCheapFlights
+                        </h3>
+                        <div class="">
+                            <div class="bookearly-text p-md-3 p-2 border border-dark rounded-3 mb-3">
+                                <h4>
+                                    Avoid flight price increases
+                                </h4>
+                                Flight prices tend to rise as the travel date gets closer. Avoid those price hikes and
+                                secure your seat early.
+                            </div>
+                            <div class="bookearly-text p-md-3 p-2 border border-dark rounded-3 mb-3">
+                                <h4>
+                                    Pay as you save
+                                </h4>
+                                <p>
+                                    Create a payment plan that works with you and your pay cycle, without forking out
+                                    your
+                                    funds for the full upfront cost.
+                                </p>
+                            </div>
+                            <div class="bookearly-text p-md-3 p-2 border border-dark rounded-3">
+                                <h4>
+                                    Stress less
+                                </h4>
+                                <p>
+                                    Own your vacation before you take off, and make memories knowing you won't be coming
+                                    home to debt.
+                                </p>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <a href="">
-                        <div class="popularDestCard shadow-lg rounded-5 p-2 pb-0">
-                            <div class="popularCardInner">
-                                <div class="">
-                                    <img src="https://www.kayak.com/rimg/dimg/4d/5a/a25ec4ac-city-33415-16510f7e605.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200" class="img-fluid rounded-5">
-                                </div>
-                                <div class="destName p-3 d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h6 class="fw-bold">
-                                            Baku
-                                        </h6>
-                                        <div class="fromFare fw-bold">
-                                            <span>
-                                                from $499
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <span>
-                                        <i class="fa-classic fa-solid fa-chevron-right fa-fw"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <a href="">
-                        <div class="popularDestCard shadow-lg rounded-5 p-2 pb-0">
-                            <div class="popularCardInner">
-                                <div class="">
-                                    <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200" class="img-fluid rounded-5">
-                                </div>
-                                <div class="destName p-3 d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h6 class="fw-bold">
-                                            Karachi
-                                        </h6>
-                                        <div class="fromFare fw-bold">
-                                            <span>
-                                                from $299
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <span>
-                                        <i class="fa-classic fa-solid fa-chevron-right fa-fw"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <a href="">
-                        <div class="popularDestCard shadow-lg rounded-5 p-2 pb-0">
-                            <div class="popularCardInner">
-                                <div class="">
-                                    <img src="https://www.kayak.com/rimg/dimg/29/6a/9511b05e-city-10828-1655c9680af.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200" class="img-fluid rounded-5">
-                                </div>
-                                <div class="destName p-3 d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h6 class="fw-bold">
-                                            Karachi
-                                        </h6>
-                                        <div class="fromFare fw-bold">
-                                            <span>
-                                                from $299
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <span>
-                                        <i class="fa-classic fa-solid fa-chevron-right fa-fw"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <a href="">
-                        <div class="popularDestCard shadow-lg rounded-5 p-2 pb-0">
-                            <div class="popularCardInner">
-                                <div class="">
-                                    <img src="https://www.kayak.com/rimg/dimg/4d/5a/a25ec4ac-city-33415-16510f7e605.jpg?crop=true&height=512"
-                                        alt="" width="284" height="200" class="img-fluid rounded-5">
-                                </div>
-                                <div class="destName p-3 d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h6 class="fw-bold">
-                                            Baku
-                                        </h6>
-                                        <div class="fromFare fw-bold">
-                                            <span>
-                                                from $499
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <span>
-                                        <i class="fa-classic fa-solid fa-chevron-right fa-fw"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -972,10 +896,10 @@
             </div>
         </div>
     </div>
-    <div class="reviews my-5">
+    <div class="reviews py-5">
         <div class="container-lg">
             <div class="text-center mb-4">
-                <p class="mb-0">Happy Customer</p>
+                <p class="mb-0">Happy Customers</p>
                 <h2>
                     User's Tesimonials
                 </h2>
@@ -991,7 +915,8 @@
                         </span>
                         <div class="h-100">
                             <p class="testiText">
-                                I used Flayawayworld for my summer holiday booking. Suppert team dealt with my booking
+                                I used GalaxyCheapFlights for my summer holiday booking. Suppert team dealt with my
+                                booking
                                 and made sure everything was fine. Team was professional and calm, even while I was back
                                 and forth and could not make up my mind on time.
                                 Thank you Ubaid for the excellent service.
@@ -1080,7 +1005,7 @@
             </div>
         </div>
     </div>
-    <div class="blogs mt-5 py-4">
+    <div class="blogs py-4">
         <div class="container-lg">
             <div class="text-center">
                 <h2>
@@ -1190,7 +1115,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footerItem">
                         <div class="footLogo mb-4">
-                            <img src="front/images/FlyAwayLogo.png" alt="" class="img-fluid">
+                            <img src="./front/images/gcf-logo.png" alt="" class="img-fluid">
                         </div>
                         <!-- <div class="about">
                             <p>
@@ -1212,7 +1137,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footerItem">
-                        <h6>
+                        <h6 class="fw-bold">
                             Explore
                         </h6>
                         <ul class="list-unstyled">
@@ -1233,7 +1158,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footerItem">
-                        <h6>
+                        <h6 class="fw-bold">
                             Popular destinations
                         </h6>
                         <ul class="list-unstyled">
@@ -1254,20 +1179,20 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footerItem">
-                        <h6>
+                        <h6 class="fw-bold">
                             Contact Us
                         </h6>
                         <address class="d-flex flex-column gap-2">
                             <span>124 City Road, London, England, EC1V 2NX<br></span>
                             <span>
                                 <a href="mailto:info@flyawayworld.com" class="d-flex gap-1"><span><i
-                                            class="fa-solid fa-envelope"></i></span>info@flayawayworld.com</a>
+                                            class="fa-solid fa-envelope"></i></span>info@galaxycheapflights.co.uk</a>
                             </span>
                             <span><a href="tel:+442084329577" class="d-flex gap-1"><span><i class="fa fa-phone"
                                             aria-hidden="true"></i></span>+442084329577</a></span>
-                            <span><a href="https://api.whatsapp.com/send/?phone=02088995566&text=Deal+in+all+kind+of+Travel+Services.&type=phone_number&app_absent=0"
+                            <span><a href="https://wa.me/%2B442084324011?text=I%27m%20interested%20in%20your%20flight%20details."
                                     class="d-flex gap-1"><span><i
-                                            class="fa-brands fa-whatsapp"></i></span>02088995566</a></span>
+                                            class="fa-brands fa-whatsapp"></i></span>+442084329577</a></span>
                         </address>
                         <p>Company Register Number 14424770</p>
                     </div>
@@ -1278,12 +1203,12 @@
             <div class="container-lg">
                 <p class="text-white mb-0">
                     Copyright © 2025. All Rights Reserved By <a href="" class=""
-                        style="color: rgb(255, 255, 255, .8)">Flyawayworld</a>
+                        style="color: rgb(255, 255, 255, .8)">GalaxyCheapFlights</a>
                 </p>
             </div>
         </div>
         <div class="whatsAppChat position-fixed">
-            <a href="https://api.whatsapp.com/send/?phone=02088995566&text=Deal+in+all+kind+of+Travel+Services.&type=phone_number&app_absent=0"
+            <a href="https://wa.me/%2B442084324011?text=I%27m%20interested%20in%20your%20flight%20details."
                 target="_blank"><img src="front/images/65f416f151f8e.gif" alt="" class="img-fluid"></a>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

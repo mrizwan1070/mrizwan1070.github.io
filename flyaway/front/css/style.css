@@ -1,10 +1,16 @@
 body {
-    font-family: "Poppins", sans-serif;
-    /* font-family: "Roboto", sans-serif; */
-    background-color: #f4f7f9;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Roboto", sans-serif;
+    /* background-color: #f4f7f9; */
     font-weight: 300;
 }
-
+@font-face {
+    font-family: "rooboto";
+    src: url(../fonts/Roobert-SemiBold.woff2);
+}
+h1,h2,h3{
+    font-family: "rooboto", sans-serif;
+}
 :root {
     --primaryColor: rgba(0, 143, 123, 1);
     --primaryHover: rgba(0, 117, 101, 1);
@@ -184,12 +190,12 @@ header {
 
 .popularDestCard {
     scale: 1;
-    transition: all 0.5s linear;
+    /* transition: all 0.5s linear; */
 }
 
-.popularDestCard:hover {
+/* .popularDestCard:hover {
     scale: 1.06;
-}
+} */
 
 .sortBtn {
     flex: 0 0 33.33%;
@@ -454,12 +460,12 @@ footer {
 }
 
 .socialIcon {
-    color: var(--primaryColor);
+    color: var(--primaryBtn);
     font-size: 1.5rem;
 }
 
 .disc {
-    background-color: var(--primaryColor);
+    background-color: var(--primaryBtn);
 }
 
 .topAirlines {
@@ -551,7 +557,7 @@ a.learMorebtn {
     background: #00c95f;
     border-radius: 50%;
     padding: 8px;
-    z-index: 1;
+    z-index: 9999;
 }
 
 @media screen and (max-width: 768px) {
@@ -602,4 +608,10 @@ a.learMorebtn {
     font-weight: 600;
     border-bottom: 3px solid #007bff; /* bold underline */
     color: #007bff;
+}
+.bookearly-text{
+    cursor: pointer;
+}
+.reviews{
+    background-color: #f4f7f9
 }
