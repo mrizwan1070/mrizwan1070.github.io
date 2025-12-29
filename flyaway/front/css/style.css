@@ -16,7 +16,8 @@ h1,h2,h3{
     --primaryHover: rgba(0, 117, 101, 1);
     --btnGradient: linear-gradient(135deg, rgba(0, 143, 123, 0.4) 0%, rgba(0, 143, 123, 1) 100%);
     --btnGradientHover: linear-gradient(135deg, rgb(213, 23, 109)20%, rgb(105, 12, 54));
-    --primaryBtn: rgb(30,144,255);
+    --primaryBtn: #2563EB;
+    --primaryBtnHover: #1D4ED8;
 }
 
 a {
@@ -73,6 +74,7 @@ header {
 }
 .pessanger{
     padding: 8px 0;
+    position: relative;
 }
 .pessangerSelect {
     top: -0.1rem;
@@ -141,7 +143,13 @@ header {
 .carousel-item img {
     object-position: right;
 }
-
+.herovideo{
+    object-fit: cover;
+    height: 610px;
+}
+.section-heading{
+    font-size: 3rem;
+}
 .flightSearch {
     top: 50%;
     left: 50%;
@@ -174,7 +182,7 @@ header {
 }
 
 .search-flight-btn:hover {
-    background: rgb(27, 132, 236);
+    background:var(--primaryBtnHover);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
     color: #fff;
@@ -559,7 +567,15 @@ a.learMorebtn {
     padding: 8px;
     z-index: 9999;
 }
-
+.heaadtext h1{
+    font-size: 3.5rem;
+}
+.heaadtext p{
+    font-size: 1.2rem;
+}
+.text2{
+    font-size: 1.5rem;
+}
 @media screen and (max-width: 768px) {
     .sortBtn {
         padding: .5rem 1rem;
@@ -576,7 +592,27 @@ a.learMorebtn {
         font-weight: 500;
         position: relative;
     }
-
+/* .herovideo{
+    height: 940px;
+} */
+ .pessanger{
+    position: static;
+ }
+ .pessangerSelect{
+    right: 0;
+ }
+.heaadtext h1{
+    font-size: 1.5rem;
+}
+.heaadtext p{
+    font-size: 1rem;
+}
+.section-heading{
+    font-size: 1.3rem;
+}
+.text2{
+    font-size: 1.2rem;
+}
     .sortBtn>div {
         font-size: .8rem;
     }
@@ -584,6 +620,11 @@ a.learMorebtn {
     .f-lg {
         font-size: 1.1rem;
     }
+}
+.popImg img{
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
 }
 .font-600{
     font-weight: 600 !important;
