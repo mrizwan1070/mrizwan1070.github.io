@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="front/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="front/owlcarousel/assets/owl.theme.default.min.css">
     <script src="front/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="front/js/custom.js"></script>
     <script src="https://kit.fontawesome.com/a59ab3dbeb.js" crossorigin="anonymous"></script>
@@ -424,11 +426,10 @@
                                             </span>
                                             <div class="row mx-0 flex-nowrap">
                                                 <div class="col px-1">
-                                                    <input type="text" id="departDate" onfocus="(this.type='date')"
-                                                        onblur="(this.type='text')" class="form-control"
+                                                    <input type="text" id="departDate" class="form-control"
                                                         placeholder="Depart date">
                                                 </div>
-                                                <div class="col px-1" id="returnDateContainer" style="display: block;">
+                                                <div class="col px-1" id="returnDateContainer" style="display: none;">
                                                     <input type="text" id="returnDate" onfocus="(this.type='date')"
                                                         onblur="(this.type='text')" class="form-control"
                                                         placeholder="Return date">

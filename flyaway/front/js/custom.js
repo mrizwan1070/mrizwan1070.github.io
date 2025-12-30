@@ -9,6 +9,11 @@ jQuery(document).ready(function () {
             returnDateContainer.show();
         }
     }
+    flatpickr("#departDate", {
+        minDate: "today",
+        dateFormat: "d/m/Y",
+        allowInput: true
+    });
     $('.search-flight-btn').on('click', function () {
         window.location.href = 'flight.html'; // Change this to your desired URL
     });

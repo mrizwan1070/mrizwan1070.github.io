@@ -246,12 +246,12 @@ header {
 }
 
 .bookBtn {
-    background: var(--btnGradient);
+    background: var(--primaryBtn);
     color: #fff;
     border: none;
     width: 100%;
     border-radius: .3rem;
-    transition: background 5s linear;
+    transition: background 1s linear;
 }
 
 .bookBtn.whatsAppBtn {
@@ -261,7 +261,7 @@ header {
 }
 
 .bookBtn:hover {
-    background: var(--btnGradientHover);
+    background: var(--primaryBtnHover);
 }
 
 .bookBtn.whatsAppBtn:hover {
